@@ -1,0 +1,16 @@
+############ pthread builders ############
+PTHREAD_CFLAGS = $(CFLAGS)
+PTHREAD_CPPFLAGS+=$(PTHREAD_CFLAGS)
+PTHREAD_LIBS += $(LIBS) -lpthread
+
+%.o: %.c *.h
+	$(CC) $(PTHREAD_CFLAGS) -c $< -o $@
+
+%.o: %.cpp *.h
+	$(CPP) $(PTHREAD_CPPFLAGS) -c $< -o $@
+
+$(PROG)-pthread: $(OBJS)
+	$(LD) $(LDFLAGS) $^ -o $@.out $(PTHREAD_LIBS) 
+
+eval-pthread: $(PROG)-pthread
+	time ./$(PROG)-pthread.out $(TEST_ARGS)

@@ -1,0 +1,11 @@
+include $(HOME)/pmthreads/benchmarks/parsec/defines.common.mk 
+include $(HOME)/pmthreads/benchmarks/parsec/num_threads.mk 
+include ./Defines.common.mk 
+include ./args.mk
+
+
+include ./config.mk
+
+binary: $(PROG)-$(CONFIG)
+	mkdir -p bin
+	cp $(PROG)-$(CONFIG).out bin/$(CONFIG).out

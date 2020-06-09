@@ -1,0 +1,26 @@
+Import('examplesEnv')
+
+myEnv = examplesEnv.Clone()
+myEnv.Append(CPPPATH='.')
+myEnv.Append(CCFLAGS ='-g -O1')
+myEnv.Append(CCFLAGS ='-std=c++11 -pthread')
+
+
+if myEnv['BUILD_PVAR'] == True:
+	pvarLibrary = myEnv.SharedLibrary('pvar', 'pvar.c')
+	Return('pvarLibrary')
+else:
+	Import('pmallocLibrary')
+	Import('mcoreLibrary')
+	Import('mtmLibrary')
+	sources = Split("""
+		main.cpp
+		barrier.cpp
+		get_options.cpp
+		coupling.c
+		linkedlist-lock.c
+				""")
+	myEnv.Append(LIBS = [pmallocLibrary])
+	myEnv.Append(LIBS = [mcoreLibrary])
+	myEnv.Append(LIBS = [mtmLibrary])
+	myEnv.Program('stress-test', sources)

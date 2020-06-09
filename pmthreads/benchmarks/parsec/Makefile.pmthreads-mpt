@@ -1,0 +1,20 @@
+CLANG=clang
+CXX=clang++
+
+############ pmthreads builders ############
+PMTHREADS_CFLAGS = $(CFLAGS) 
+PMTHREADS_CPPFLAGS+=$(PMTHREADS_CFLAGS)
+PMTHREADS_HOME=$(HOME)/pmthreads/src
+PMTHREADS_LIBS += $(LIBS) -rdynamic $(PMTHREADS_HOME)/libpmthreads-mpt-malloc.so -ldl -lpthread
+
+%.o: %.c
+	$(CLANG) $(PMTHREADS_CFLAGS) -c $< -o $@
+
+%.o: %.cpp
+	$(CXX) $(PMTHREADS_CPPFLAGS) -c $< -o $@
+
+$(PROG)-pmthreads-mpt: $(OBJS)
+	$(CXX) $(LDFLAGS) $^ -o $@.out $(PMTHREADS_LIBS) 
+
+eval-pmthreads-mpt: $(PROG)-pmthreads-mpt
+	perf stat -d ./$(PROG)-pmthreads-mpt.out $(TEST_ARGS)

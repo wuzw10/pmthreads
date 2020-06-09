@@ -1,0 +1,1 @@
+TEST_ARGS = -ns 128 -sm 50000 -nt $(NUM_THREADS)

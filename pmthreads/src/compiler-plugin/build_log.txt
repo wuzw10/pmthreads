@@ -1,0 +1,2 @@
+Compiling object files
+./build_plugin: line 43: timeout: command not found

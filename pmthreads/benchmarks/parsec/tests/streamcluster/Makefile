@@ -1,0 +1,28 @@
+include $(HOME)/pmthreads/benchmarks/parsec/defines.common.mk 
+include $(HOME)/pmthreads/benchmarks/parsec/num_threads.mk 
+include ./Defines.common.mk 
+include ./args.mk
+
+
+include ./config.mk
+
+binary: $(PROG)-$(CONFIG)
+	mkdir -p bin
+	cp $(PROG)-$(CONFIG).out bin/$(CONFIG).out
+CLANG :=  clang
+CLANGPP := clang++
+############ atlas builders ############
+ATLAS_CFLAGS += -DATLAS_TEST $(CFLAGS) -Xclang -load -Xclang  $(HOME)/pmthreads/third-parties/atlas/compiler-plugin/plugin_build/NvmInstrumenter.so -I$(HOME)/pmthreads/third-parties/atlas/runtime/build/include
+ATLAS_CPPFLAGS+=$(ATLAS_CFLAGS)
+ATLAS_LIBS += $(LIBS) -lpthread  -L$(HOME)/pmthreads/third-parties/atlas/runtime/build/lib -latlas -lpthread
+%.o: %.c
+	$(CLANG) $(ATLAS_CFLAGS) -c $< -o $@
+
+%.o: %.cpp
+	$(CLANGPP) $(ATLAS_CPPFLAGS) -c $< -o $@
+
+$(PROG)-atlas: $(OBJS)
+	$(CLANGPP)  $(ATLAS_CPPFLAGS) $(LDFLAGS)  $^ -o $@.out $(ATLAS_LIBS) 
+
+eval-atlas: $(PROG)-atlas
+	perf stat -d ./$(PROG)-atlas.out $(TEST_ARGS)

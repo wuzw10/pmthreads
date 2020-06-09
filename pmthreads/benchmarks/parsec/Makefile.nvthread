@@ -1,0 +1,22 @@
+NVTHREADS_HOME=$(HOME)/pmthreads/third-parties/nvthreads/src
+############ nvthread builders ############
+NVTHREAD_CFLAGS = $(CFLAGS) 
+NVTHREAD_CPPFLAGS+=$(NVTHREAD_CFLAGS)
+ifneq (, $(findstring -m32, $(CFLAGS)))
+NVTHREAD_LIBS += $(LIBS) -rdynamic $(NVTHREADS_HOME)/libnvthread32.so -ldl -lpthread
+else
+NVTHREAD_LIBS += $(LIBS) -rdynamic $(NVTHREADS_HOME)/libnvthread.so -ldl -lpthread
+endif
+
+%.o: %.c *.h
+	$(CC) $(NVTHREAD_CFLAGS) -c $< -o $@
+
+%.o: %.cpp *.h
+	$(CPP) $(NVTHREAD_CPPFLAGS) -c $< -o $@
+
+$(PROG)-nvthread: $(OBJS)
+	$(LD) $(LDFLAGS) $^ -o $@.out $(NVTHREAD_LIBS) 
+
+eval-nvthread: $(PROG)-nvthread
+	perf stat -d ./$(PROG)-nvthread.out $(TEST_ARGS)
+

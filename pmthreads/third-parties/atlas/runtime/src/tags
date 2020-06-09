@@ -1,0 +1,813 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ActualAlloced_	internal_includes/pmalloc.hpp	/^    uint64_t ActualAlloced_;$/;"	m	class:Atlas::PArena
+AddToMap	recover/recover.cpp	/^void AddToMap(LogEntry *acq_le, int tid)$/;"	f
+Addr	internal_includes/log_structure.hpp	/^    void *Addr; \/* address of mloc or lock object *\/$/;"	m	struct:Atlas::LogEntry
+Addr2Bool	internal_includes/consistency_mgr.hpp	/^    typedef std::map<intptr_t*, bool> Addr2Bool;$/;"	t	class:Atlas::CSMgr
+AddrSizePairType	internal_includes/util.hpp	/^typedef std::pair<void*,size_t> AddrSizePairType;$/;"	t
+Addr_	internal_includes/util.hpp	/^    void *Addr_;$/;"	m	class:ElemInfo
+AllDone_	internal_includes/log_mgr.hpp	/^    std::atomic<int> AllDone_;$/;"	m	class:Atlas::LogMgr
+AllFases_	internal_includes/consistency_mgr.hpp	/^    FaseVec AllFases_;$/;"	m	class:Atlas::CSMgr
+Arena_	internal_includes/pregion.hpp	/^    PArena Arena_[kNumArenas_];$/;"	m	class:Atlas::PRegion
+AsyncDataFlush	logger/log_mgr_api.cpp	/^void AsyncDataFlush(void *p) $/;"	f
+AsyncMemOpDataFlush	logger/log_mgr_api.cpp	/^void AsyncMemOpDataFlush(void *dst, size_t sz)$/;"	f
+Atlas	cache_flush/delayed.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	cache_flush/generic.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	cache_flush/table_based.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	consistency/consistency.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	consistency/consistency_mgr.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	consistency/durability_graph_builder.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	consistency/helper_driver.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	consistency/log_pruner.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	internal_includes/cache_flush_configs.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/circular_buffer.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/consistency_configs.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/consistency_mgr.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/durability_graph.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/fase.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/happens_before.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/helper.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/log_configs.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/log_elision.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/log_mgr.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/log_structure.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/pmalloc.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/pmalloc_util.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/pregion.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/pregion_configs.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/pregion_mgr.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/pregion_mgr_util.hpp	/^namespace Atlas {$/;"	n
+Atlas	internal_includes/stats.hpp	/^namespace Atlas {$/;"	n
+Atlas	logger/circular_buffer.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	logger/happens_before.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	logger/log_elision.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	logger/log_entry_create.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	logger/log_entry_publish.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	logger/log_mgr.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	pmalloc/pmalloc.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	pmalloc/pregion.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	pregion_mgr/pregion_mgr.cpp	/^namespace Atlas {$/;"	n	file:
+Atlas	util/stats.cpp	/^namespace Atlas {$/;"	n	file:
+BAIL	internal_includes/fsync.hpp	32;"	d
+BaseAddr_	internal_includes/pregion.hpp	/^    void *BaseAddr_;$/;"	m	class:Atlas::PRegion
+CACHE_FLUSH_CONFIGS_HPP	internal_includes/cache_flush_configs.hpp	18;"	d
+CONSISTENCY_CONFIGS_HPP	internal_includes/consistency_configs.hpp	18;"	d
+CONSISTENCY_MGR_HPP	internal_includes/consistency_mgr.hpp	18;"	d
+CSMgr	internal_includes/consistency_mgr.hpp	/^    explicit CSMgr() :$/;"	f	class:Atlas::CSMgr
+CSMgr	internal_includes/consistency_mgr.hpp	/^class CSMgr {$/;"	c	namespace:Atlas
+CacheLineMask_	internal_includes/pmalloc_util.hpp	/^    static uintptr_t CacheLineMask_;$/;"	m	class:Atlas::PMallocUtil
+CacheLineSize_	internal_includes/pmalloc_util.hpp	/^    static uint32_t CacheLineSize_;$/;"	m	class:Atlas::PMallocUtil
+Cb	internal_includes/circular_buffer.hpp	/^    CbLog<T> *Cb;$/;"	m	struct:Atlas::CbListNode
+CbListNode	internal_includes/circular_buffer.hpp	/^    explicit CbListNode(CbLog<T> *cb, char *start_addr, char *end_addr)$/;"	f	struct:Atlas::CbListNode
+CbListNode	internal_includes/circular_buffer.hpp	/^struct CbListNode$/;"	s	namespace:Atlas
+CbLog	internal_includes/circular_buffer.hpp	/^    explicit CbLog(uint32_t sz, uint32_t is_filled,$/;"	f	struct:Atlas::CbLog
+CbLog	internal_includes/circular_buffer.hpp	/^struct CbLog$/;"	s	namespace:Atlas
+CbLogList_	internal_includes/log_mgr.hpp	/^    std::atomic<CbListNode<LogEntry>*> CbLogList_;$/;"	m	class:Atlas::LogMgr
+CmpAddrSizePair	internal_includes/util.hpp	/^class CmpAddrSizePair$/;"	c
+CmpIntPtr	internal_includes/pregion_mgr_util.hpp	/^    class CmpIntPtr {$/;"	c	class:Atlas::PRegionExtentMap
+CmpUInt64	internal_includes/util.hpp	/^class CmpUInt64$/;"	c
+Count	internal_includes/log_elision.hpp	/^    std::atomic<uint64_t> Count;$/;"	m	struct:Atlas::LockReleaseCount
+CreateRelToAcqMappings	recover/recover.cpp	/^void CreateRelToAcqMappings(LogStructure *lsp)$/;"	f
+CurrAllocAddr_	internal_includes/pmalloc.hpp	/^    void *CurrAllocAddr_; \/\/ bump pointer$/;"	m	class:Atlas::PArena
+DGraph	internal_includes/durability_graph.hpp	/^class DGraph {$/;"	c	namespace:Atlas
+DURABILITY_GRAPH_HPP	internal_includes/durability_graph.hpp	18;"	d
+DelIter	internal_includes/helper.hpp	/^    typedef MultiMapLog2Int::iterator DelIter;$/;"	t	class:Atlas::Helper
+Del_	internal_includes/helper.hpp	/^        Log2Bool Del_;$/;"	m	struct:Atlas::Helper::LogVer
+DeletedRelLogs_	internal_includes/helper.hpp	/^    MultiMapLog2Int DeletedRelLogs_;$/;"	m	class:Atlas::Helper
+DirectedGraph	internal_includes/durability_graph.hpp	/^        VProp> DirectedGraph;$/;"	t	class:Atlas::DGraph
+DirectedGraph_	internal_includes/durability_graph.hpp	/^    DirectedGraph DirectedGraph_;$/;"	m	class:Atlas::DGraph
+EDesc	internal_includes/durability_graph.hpp	/^    typedef boost::graph_traits<DirectedGraph>::edge_descriptor EDesc;$/;"	t	class:Atlas::DGraph
+ElemInfo	internal_includes/util.hpp	/^    ElemInfo(void *addr, const ElemType & elem)$/;"	f	class:ElemInfo
+ElemInfo	internal_includes/util.hpp	/^class ElemInfo$/;"	c
+Elem_	internal_includes/util.hpp	/^    std::atomic<ElemType*> Elem_;$/;"	m	class:ElemInfo
+End	internal_includes/circular_buffer.hpp	/^    std::atomic<uint32_t> End;$/;"	m	struct:Atlas::CbLog
+EndAddr	internal_includes/circular_buffer.hpp	/^    char *EndAddr;$/;"	m	struct:Atlas::CbListNode
+EndAddr_	internal_includes/pmalloc.hpp	/^    void *EndAddr_;$/;"	m	class:Atlas::PArena
+ExistingRelMap_	internal_includes/consistency_mgr.hpp	/^    Helper::MapLog2Int *ExistingRelMap_;$/;"	m	class:Atlas::CSMgr
+ExistingRelMap_	internal_includes/helper.hpp	/^    MapLog2Int ExistingRelMap_;$/;"	m	class:Atlas::Helper
+ExtentMap_	internal_includes/pregion_mgr.hpp	/^    std::atomic<PRegionExtentMap*> ExtentMap_; \/\/ region extent tracker$/;"	m	class:Atlas::PRegionMgr
+Extents_	internal_includes/pregion_mgr_util.hpp	/^    MapInterval Extents_;$/;"	m	class:Atlas::PRegionExtentMap
+FAIL	internal_includes/fail.hpp	18;"	d
+FAIL_MAX	internal_includes/fail.hpp	24;"	d
+FASE_HPP	internal_includes/fase.hpp	18;"	d
+FASection	internal_includes/fase.hpp	/^    explicit FASection(LogEntry *first, LogEntry *last) $/;"	f	struct:Atlas::FASection
+FASection	internal_includes/fase.hpp	/^struct FASection {$/;"	s	namespace:Atlas
+FP	internal_includes/fsync.hpp	26;"	d
+FaseMap	internal_includes/consistency_mgr.hpp	/^    typedef std::map<LogStructure*, FASection*> FaseMap;$/;"	t	class:Atlas::CSMgr
+FaseVec	internal_includes/consistency_mgr.hpp	/^    typedef std::vector<FASection*> FaseVec;$/;"	t	class:Atlas::CSMgr
+Fase_	internal_includes/durability_graph.hpp	/^        FASection *Fase_;$/;"	m	struct:Atlas::DGraph::VProp
+FileDesc_	internal_includes/pregion.hpp	/^    int FileDesc_;$/;"	m	class:Atlas::PRegion
+FindInMapInterval	internal_includes/util.hpp	/^inline MapInterval::const_iterator FindInMapInterval($/;"	f
+FindSetOfPairs	internal_includes/util.hpp	/^inline SetOfPairs::const_iterator FindSetOfPairs($/;"	f
+First	internal_includes/fase.hpp	/^    LogEntry *First;$/;"	m	struct:Atlas::FASection
+FirstFaseOfHeader_	internal_includes/consistency_mgr.hpp	/^    FaseMap FirstFaseOfHeader_;$/;"	m	class:Atlas::CSMgr
+FreeList	internal_includes/pmalloc.hpp	/^typedef std::map<uint32_t \/* bin number *\/, MemMap> FreeList;$/;"	t	namespace:Atlas
+FreeList_	internal_includes/pmalloc.hpp	/^    FreeList *FreeList_;$/;"	m	class:Atlas::PArena
+GetElemInfoHeader	internal_includes/util.hpp	/^    ElemInfo<ElemType> *GetElemInfoHeader(void *addr)$/;"	f	class:SimpleHashTable
+GetLogStructureHeader	recover/recover.cpp	/^LogStructure *GetLogStructureHeader()$/;"	f
+GetPointerToElemInfoHeader	internal_includes/util.hpp	/^    std::atomic<ElemInfo<ElemType>*> *GetPointerToElemInfoHeader(void *addr)$/;"	f	class:SimpleHashTable
+GetPrevLogEntry	recover/recover.cpp	/^LogEntry *GetPrevLogEntry(LogEntry *le)$/;"	f
+GetTableEntry	internal_includes/util.hpp	/^    std::atomic<ElemInfo<ElemType>*> *GetTableEntry(void *addr)$/;"	f	class:SimpleHashTable
+GlobalFlush_	internal_includes/consistency_mgr.hpp	/^    SetOfInts *GlobalFlush_;$/;"	m	class:Atlas::CSMgr
+Graph_	internal_includes/consistency_mgr.hpp	/^    DGraph Graph_;$/;"	m	class:Atlas::CSMgr
+HAPPENS_BEFORE_HPP	internal_includes/happens_before.hpp	18;"	d
+HELPER_HPP	internal_includes/helper.hpp	18;"	d
+Helper	internal_includes/helper.hpp	/^    Helper() :$/;"	f	class:Atlas::Helper
+Helper	internal_includes/helper.hpp	/^class Helper {$/;"	c	namespace:Atlas
+HelperCondition_	internal_includes/log_mgr.hpp	/^    pthread_cond_t HelperCondition_;$/;"	m	class:Atlas::LogMgr
+HelperLock_	internal_includes/log_mgr.hpp	/^    pthread_mutex_t HelperLock_;$/;"	m	class:Atlas::LogMgr
+HelperThread_	internal_includes/log_mgr.hpp	/^    pthread_t HelperThread_;$/;"	m	class:Atlas::LogMgr
+IEIter	internal_includes/durability_graph.hpp	/^    typedef boost::graph_traits<DirectedGraph>::in_edge_iterator IEIter;$/;"	t	class:Atlas::DGraph
+INTERNAL_API	internal_includes/internal_api.h	18;"	d
+Id_	internal_includes/pregion.hpp	/^    region_id_t Id_; $/;"	m	class:Atlas::PRegion
+Immutable	internal_includes/happens_before.hpp	/^    std::atomic<ImmutableInfo*> Immutable;$/;"	m	struct:Atlas::LastReleaseInfo
+ImmutableInfo	internal_includes/happens_before.hpp	/^    explicit ImmutableInfo(LogEntry *le, MapOfLockInfo *linfo, bool is_del) $/;"	f	struct:Atlas::ImmutableInfo
+ImmutableInfo	internal_includes/happens_before.hpp	/^struct ImmutableInfo$/;"	s	namespace:Atlas
+InsertSetOfPairs	internal_includes/util.hpp	/^inline void InsertSetOfPairs(SetOfPairs *setp, void *addr, size_t sz)$/;"	f
+InsertToMapInterval	internal_includes/util.hpp	/^inline void InsertToMapInterval($/;"	f
+Instance_	internal_includes/consistency_mgr.hpp	/^    static CSMgr *Instance_;$/;"	m	class:Atlas::CSMgr
+Instance_	internal_includes/helper.hpp	/^    static Helper *Instance_;$/;"	m	class:Atlas::Helper
+Instance_	internal_includes/log_mgr.hpp	/^    static LogMgr *Instance_;$/;"	m	class:Atlas::LogMgr
+Instance_	internal_includes/pregion_mgr.hpp	/^    static PRegionMgr *Instance_;$/;"	m	class:Atlas::PRegionMgr
+Instance_	internal_includes/stats.hpp	/^    static Stats *Instance_;$/;"	m	class:Atlas::Stats
+IntPtrPair	internal_includes/pregion_mgr_util.hpp	/^    typedef std::pair<intptr_t,intptr_t> IntPtrPair;$/;"	t	class:Atlas::PRegionExtentMap
+IsDeleted	internal_includes/fase.hpp	/^    bool IsDeleted;$/;"	m	struct:Atlas::FASection
+IsDeleted	internal_includes/happens_before.hpp	/^    bool IsDeleted;$/;"	m	struct:Atlas::ImmutableInfo
+IsDeleted_	internal_includes/pregion.hpp	/^    bool IsDeleted_;$/;"	m	class:Atlas::PRegion
+IsInRecovery_	internal_includes/consistency_mgr.hpp	/^    bool IsInRecovery_;$/;"	m	class:Atlas::CSMgr
+IsInRecovery_	internal_includes/helper.hpp	/^    bool IsInRecovery_;$/;"	m	class:Atlas::Helper
+IsInitialized_	internal_includes/log_mgr.hpp	/^    bool IsInitialized_;$/;"	m	class:Atlas::LogMgr
+IsMapped_	internal_includes/pregion.hpp	/^    bool IsMapped_;$/;"	m	class:Atlas::PRegion
+IsParentDone_	internal_includes/consistency_mgr.hpp	/^    bool IsParentDone_; \/\/ Is the parent user thread done?$/;"	m	class:Atlas::CSMgr
+IterNum_	internal_includes/helper.hpp	/^    uint64_t IterNum_;$/;"	m	class:Atlas::Helper
+LAST_LOG_ELEM	internal_includes/log_structure.hpp	71;"	d
+LE_acquire	internal_includes/log_configs.hpp	/^    LE_dummy, LE_acquire, LE_rwlock_rdlock, LE_rwlock_wrlock,$/;"	e	enum:Atlas::LogType
+LE_alloc	internal_includes/log_configs.hpp	/^    LE_strcpy, LE_strcat, LE_alloc, LE_free$/;"	e	enum:Atlas::LogType
+LE_begin_durable	internal_includes/log_configs.hpp	/^    LE_begin_durable, LE_release, LE_rwlock_unlock, LE_end_durable,$/;"	e	enum:Atlas::LogType
+LE_dummy	internal_includes/log_configs.hpp	/^    LE_dummy, LE_acquire, LE_rwlock_rdlock, LE_rwlock_wrlock,$/;"	e	enum:Atlas::LogType
+LE_end_durable	internal_includes/log_configs.hpp	/^    LE_begin_durable, LE_release, LE_rwlock_unlock, LE_end_durable,$/;"	e	enum:Atlas::LogType
+LE_free	internal_includes/log_configs.hpp	/^    LE_strcpy, LE_strcat, LE_alloc, LE_free$/;"	e	enum:Atlas::LogType
+LE_memcpy	internal_includes/log_configs.hpp	/^    LE_str, LE_memset, LE_memcpy, LE_memmove,$/;"	e	enum:Atlas::LogType
+LE_memmove	internal_includes/log_configs.hpp	/^    LE_str, LE_memset, LE_memcpy, LE_memmove,$/;"	e	enum:Atlas::LogType
+LE_memset	internal_includes/log_configs.hpp	/^    LE_str, LE_memset, LE_memcpy, LE_memmove,$/;"	e	enum:Atlas::LogType
+LE_release	internal_includes/log_configs.hpp	/^    LE_begin_durable, LE_release, LE_rwlock_unlock, LE_end_durable,$/;"	e	enum:Atlas::LogType
+LE_rwlock_rdlock	internal_includes/log_configs.hpp	/^    LE_dummy, LE_acquire, LE_rwlock_rdlock, LE_rwlock_wrlock,$/;"	e	enum:Atlas::LogType
+LE_rwlock_unlock	internal_includes/log_configs.hpp	/^    LE_begin_durable, LE_release, LE_rwlock_unlock, LE_end_durable,$/;"	e	enum:Atlas::LogType
+LE_rwlock_wrlock	internal_includes/log_configs.hpp	/^    LE_dummy, LE_acquire, LE_rwlock_rdlock, LE_rwlock_wrlock,$/;"	e	enum:Atlas::LogType
+LE_str	internal_includes/log_configs.hpp	/^    LE_str, LE_memset, LE_memcpy, LE_memmove,$/;"	e	enum:Atlas::LogType
+LE_strcat	internal_includes/log_configs.hpp	/^    LE_strcpy, LE_strcat, LE_alloc, LE_free$/;"	e	enum:Atlas::LogType
+LE_strcpy	internal_includes/log_configs.hpp	/^    LE_strcpy, LE_strcat, LE_alloc, LE_free$/;"	e	enum:Atlas::LogType
+LOG_CONFIGS_HPP	internal_includes/log_configs.hpp	18;"	d
+LOG_ELISION_HPP	internal_includes/log_elision.hpp	18;"	d
+LOG_MGR_HPP	internal_includes/log_mgr.hpp	18;"	d
+LOG_STRUCTURE_HPP	internal_includes/log_structure.hpp	18;"	d
+LSVec	internal_includes/consistency_mgr.hpp	/^    typedef std::vector<LogStructure*> LSVec;$/;"	t	class:Atlas::CSMgr
+LS_	internal_includes/helper.hpp	/^        LogStructure *LS_;$/;"	m	struct:Atlas::Helper::LogVer
+Last	internal_includes/fase.hpp	/^    LogEntry *Last;$/;"	m	struct:Atlas::FASection
+LastReleaseInfo	internal_includes/happens_before.hpp	/^    explicit LastReleaseInfo(ImmutableInfo *ii)$/;"	f	struct:Atlas::LastReleaseInfo
+LastReleaseInfo	internal_includes/happens_before.hpp	/^struct LastReleaseInfo$/;"	s	namespace:Atlas
+Le	internal_includes/log_structure.hpp	/^    LogEntry *Le; \/\/ points to first non-deleted thread-specific log entry $/;"	m	struct:Atlas::LogStructure
+Lock	internal_includes/pmalloc.hpp	/^    void Lock() { pthread_mutex_lock(&Lock_); }$/;"	f	class:Atlas::PArena
+LockAddr	internal_includes/log_elision.hpp	/^    void *LockAddr;$/;"	m	struct:Atlas::LockReleaseCount
+LockInfoPtr	internal_includes/happens_before.hpp	/^    MapOfLockInfo *LockInfoPtr;$/;"	m	struct:Atlas::ImmutableInfo
+LockReleaseCount	internal_includes/log_elision.hpp	/^    explicit LockReleaseCount(void *addr, uint64_t count)$/;"	f	struct:Atlas::LockReleaseCount
+LockReleaseCount	internal_includes/log_elision.hpp	/^struct LockReleaseCount$/;"	s	namespace:Atlas
+LockReleaseHistory_	internal_includes/log_mgr.hpp	/^    std::atomic<LockReleaseCount*> LockReleaseHistory_[kHashTableSize];$/;"	m	class:Atlas::LogMgr
+Lock_	internal_includes/pmalloc.hpp	/^    pthread_mutex_t Lock_;$/;"	m	class:Atlas::PArena
+Lock_	internal_includes/stats.hpp	/^    pthread_mutex_t Lock_;$/;"	m	class:Atlas::Stats
+Log2Bool	internal_includes/helper.hpp	/^typedef std::map<LogEntry*, bool> Log2Bool;$/;"	t	namespace:Atlas
+LogAddr	internal_includes/happens_before.hpp	/^    LogEntry *LogAddr;$/;"	m	struct:Atlas::ImmutableInfo
+LogArray	internal_includes/circular_buffer.hpp	/^    T *LogArray;$/;"	m	struct:Atlas::CbLog
+LogEntry	internal_includes/log_structure.hpp	/^    LogEntry(void *addr, uintptr_t val_or_ptr, LogEntry *next,$/;"	f	struct:Atlas::LogEntry
+LogEntry	internal_includes/log_structure.hpp	/^struct LogEntry$/;"	s	namespace:Atlas
+LogEntryVec	internal_includes/log_mgr.hpp	/^typedef std::vector<LogEntry*> LogEntryVec;$/;"	t	namespace:Atlas
+LogIterVec	internal_includes/consistency_mgr.hpp	/^    typedef std::vector<Helper::LogVersions::iterator> LogIterVec;$/;"	t	class:Atlas::CSMgr
+LogMgr	internal_includes/log_mgr.hpp	/^    LogMgr() :$/;"	f	class:Atlas::LogMgr
+LogMgr	internal_includes/log_mgr.hpp	/^class LogMgr {$/;"	c	namespace:Atlas
+LogStructure	internal_includes/log_structure.hpp	/^    LogStructure(LogEntry *le, LogStructure *next) $/;"	f	struct:Atlas::LogStructure
+LogStructure	internal_includes/log_structure.hpp	/^struct LogStructure$/;"	s	namespace:Atlas
+LogStructureHeaderPtr_	internal_includes/log_mgr.hpp	/^    std::atomic<LogStructure*> *LogStructureHeaderPtr_;$/;"	m	class:Atlas::LogMgr
+LogType	internal_includes/log_configs.hpp	/^enum LogType {$/;"	g	namespace:Atlas
+LogVer	internal_includes/helper.hpp	/^        explicit LogVer(LogStructure *ls, Log2Bool del_logs) $/;"	f	struct:Atlas::Helper::LogVer
+LogVer	internal_includes/helper.hpp	/^    struct LogVer {$/;"	s	class:Atlas::Helper
+LogVersions	internal_includes/helper.hpp	/^    typedef std::vector<LogVer> LogVersions;$/;"	t	class:Atlas::Helper
+LogVersions_	internal_includes/helper.hpp	/^    LogVersions LogVersions_;$/;"	m	class:Atlas::Helper
+MapInt2Bool	recover/recover.hpp	/^typedef map<uint32_t, bool> MapInt2Bool;$/;"	t
+MapInterval	internal_includes/pregion_mgr_util.hpp	/^    typedef std::map<IntPtrPair,uint32_t,CmpIntPtr> MapInterval;$/;"	t	class:Atlas::PRegionExtentMap
+MapInterval	internal_includes/util.hpp	/^typedef std::map<UInt64Pair,uint32_t,CmpUInt64> MapInterval;$/;"	t
+MapLog2Bool	recover/recover.hpp	/^typedef map<LogEntry*, bool> MapLog2Bool;$/;"	t
+MapLog2Int	internal_includes/helper.hpp	/^    typedef std::map<LogEntry*, uint64_t> MapLog2Int;$/;"	t	class:Atlas::Helper
+MapLog2Log	recover/recover.hpp	/^typedef map<LogEntry*, LogEntry*> MapLog2Log;$/;"	t
+MapNodes	internal_includes/consistency_mgr.hpp	/^    typedef std::map<DGraph::VDesc, bool> MapNodes;$/;"	t	class:Atlas::CSMgr
+MapOfLockInfo	internal_includes/happens_before.hpp	/^typedef std::map<void*,uint64_t> MapOfLockInfo;$/;"	t	namespace:Atlas
+MapR2A	recover/recover.hpp	/^typedef multimap<LogEntry*, pair<LogEntry*,int \/* thread id *\/> > MapR2A;$/;"	t
+MarkReplayed	recover/recover.cpp	/^void MarkReplayed(LogEntry *le)$/;"	f
+MemMap	internal_includes/pmalloc.hpp	/^typedef std::map<void* \/* chunk address *\/, bool \/* dummy *\/> MemMap;$/;"	t	namespace:Atlas
+MultiMapLog2Int	internal_includes/helper.hpp	/^    typedef std::multimap<LogEntry*, uint64_t> MultiMapLog2Int;$/;"	t	class:Atlas::Helper
+NVM_CloseRegion	pregion_mgr/pregion_mgr_api.cpp	/^void NVM_CloseRegion(uint32_t rid)$/;"	f
+NVM_CreateLogDir	util/util.cpp	/^void NVM_CreateLogDir()$/;"	f
+NVM_CreateRegion	pregion_mgr/pregion_mgr_api.cpp	/^uint32_t NVM_CreateRegion(const char *name, int flags)$/;"	f
+NVM_CreateUserDir	util/util.cpp	/^void NVM_CreateUserDir()$/;"	f
+NVM_DeleteRegion	pregion_mgr/pregion_mgr_api.cpp	/^void NVM_DeleteRegion(const char *name)$/;"	f
+NVM_Finalize	logger/log_mgr_api.cpp	/^void NVM_Finalize()$/;"	f
+NVM_FindOrCreateRegion	pregion_mgr/pregion_mgr_api.cpp	/^uint32_t NVM_FindOrCreateRegion(const char *name, int flags, int *is_created)$/;"	f
+NVM_FindRegion	pregion_mgr/pregion_mgr_api.cpp	/^uint32_t NVM_FindRegion(const char *name, int flags)$/;"	f
+NVM_GetFullyQualifiedRegionName	util/util.cpp	/^char *NVM_GetFullyQualifiedRegionName(const char * name)$/;"	f
+NVM_GetLogDir	util/util.cpp	/^char *NVM_GetLogDir()$/;"	f
+NVM_GetLogRegionName	util/util.cpp	/^char *NVM_GetLogRegionName()$/;"	f
+NVM_GetLogRegionName	util/util.cpp	/^char *NVM_GetLogRegionName(const char * name)$/;"	f
+NVM_GetRegion	pregion_mgr/pregion_mgr_api.cpp	/^PRegion *NVM_GetRegion(uint32_t rid)$/;"	f
+NVM_GetRegionRoot	pregion_mgr/pregion_mgr_api.cpp	/^void *NVM_GetRegionRoot(uint32_t rid) $/;"	f
+NVM_GetRegionTablePath	util/util.cpp	/^char *NVM_GetRegionTablePath()$/;"	f
+NVM_GetUserDir	util/util.cpp	/^char *NVM_GetUserDir()$/;"	f
+NVM_Initialize	logger/log_mgr_api.cpp	/^void NVM_Initialize()$/;"	f
+NVM_IsInOpenPR	pregion_mgr/pregion_mgr_api.cpp	/^int NVM_IsInOpenPR(void *addr, size_t sz)$/;"	f
+NVM_IsInRegion	pregion_mgr/pregion_mgr_api.cpp	/^int NVM_IsInRegion(void *ptr, size_t sz)$/;"	f
+NVM_LOCK	internal_includes/internal_api.h	64;"	d
+NVM_LOG	internal_includes/internal_api.h	60;"	d
+NVM_MEMCPY	internal_includes/internal_api.h	106;"	d
+NVM_MEMCPY	internal_includes/internal_api.h	157;"	d
+NVM_MEMCPY	internal_includes/internal_api.h	210;"	d
+NVM_MEMCPY	internal_includes/internal_api.h	274;"	d
+NVM_MEMMOVE	internal_includes/internal_api.h	111;"	d
+NVM_MEMMOVE	internal_includes/internal_api.h	162;"	d
+NVM_MEMMOVE	internal_includes/internal_api.h	216;"	d
+NVM_MEMMOVE	internal_includes/internal_api.h	280;"	d
+NVM_MEMSET	internal_includes/internal_api.h	101;"	d
+NVM_MEMSET	internal_includes/internal_api.h	152;"	d
+NVM_MEMSET	internal_includes/internal_api.h	204;"	d
+NVM_MEMSET	internal_includes/internal_api.h	268;"	d
+NVM_PrintStats	logger/log_mgr_api.cpp	/^void NVM_PrintStats()$/;"	f
+NVM_RWLOCK_RDLOCK	internal_includes/internal_api.h	74;"	d
+NVM_RWLOCK_UNLOCK	internal_includes/internal_api.h	84;"	d
+NVM_RWLOCK_WRLOCK	internal_includes/internal_api.h	79;"	d
+NVM_STR	internal_includes/internal_api.h	142;"	d
+NVM_STR	internal_includes/internal_api.h	192;"	d
+NVM_STR	internal_includes/internal_api.h	256;"	d
+NVM_STR	internal_includes/internal_api.h	91;"	d
+NVM_STR2	internal_includes/internal_api.h	147;"	d
+NVM_STR2	internal_includes/internal_api.h	198;"	d
+NVM_STR2	internal_includes/internal_api.h	262;"	d
+NVM_STR2	internal_includes/internal_api.h	96;"	d
+NVM_STRCAT	internal_includes/internal_api.h	127;"	d
+NVM_STRCAT	internal_includes/internal_api.h	178;"	d
+NVM_STRCAT	internal_includes/internal_api.h	235;"	d
+NVM_STRCAT	internal_includes/internal_api.h	299;"	d
+NVM_STRCPY	internal_includes/internal_api.h	116;"	d
+NVM_STRCPY	internal_includes/internal_api.h	167;"	d
+NVM_STRCPY	internal_includes/internal_api.h	222;"	d
+NVM_STRCPY	internal_includes/internal_api.h	286;"	d
+NVM_STRNCAT	internal_includes/internal_api.h	133;"	d
+NVM_STRNCAT	internal_includes/internal_api.h	184;"	d
+NVM_STRNCAT	internal_includes/internal_api.h	242;"	d
+NVM_STRNCAT	internal_includes/internal_api.h	306;"	d
+NVM_STRNCPY	internal_includes/internal_api.h	122;"	d
+NVM_STRNCPY	internal_includes/internal_api.h	173;"	d
+NVM_STRNCPY	internal_includes/internal_api.h	229;"	d
+NVM_STRNCPY	internal_includes/internal_api.h	293;"	d
+NVM_SetRegionRoot	pregion_mgr/pregion_mgr_api.cpp	/^void NVM_SetRegionRoot(uint32_t rid, void *new_root)$/;"	f
+NVM_UNLOCK	internal_includes/internal_api.h	69;"	d
+NVM_doesLogExist	util/util.cpp	/^bool NVM_doesLogExist(const char *log_path_name)$/;"	f
+NVM_qualifyPathName	util/util.cpp	/^void NVM_qualifyPathName(char *s, const char *name)$/;"	f
+Name_	internal_includes/pregion.hpp	/^    char Name_[kMaxlen_];$/;"	m	class:Atlas::PRegion
+Next	internal_includes/circular_buffer.hpp	/^    CbListNode<T> *Next;$/;"	m	struct:Atlas::CbListNode
+Next	internal_includes/fase.hpp	/^    FASection *Next;$/;"	m	struct:Atlas::FASection
+Next	internal_includes/happens_before.hpp	/^    LastReleaseInfo *Next;$/;"	m	struct:Atlas::LastReleaseInfo
+Next	internal_includes/log_elision.hpp	/^    LockReleaseCount *Next;$/;"	m	struct:Atlas::LockReleaseCount
+Next	internal_includes/log_structure.hpp	/^    LogStructure *Next;$/;"	m	struct:Atlas::LogStructure
+Next	internal_includes/log_structure.hpp	/^    std::atomic<LogEntry*> Next; \/* ptr to next log entry in program order *\/$/;"	m	struct:Atlas::LogEntry
+Next_	internal_includes/util.hpp	/^    ElemInfo *Next_;$/;"	m	class:ElemInfo
+NodeId_	internal_includes/durability_graph.hpp	/^        VDesc NodeId_;$/;"	m	struct:Atlas::DGraph::NodeInfo
+NodeInfo	internal_includes/durability_graph.hpp	/^        NodeInfo(VDesc nid, NodeType node_type) $/;"	f	struct:Atlas::DGraph::NodeInfo
+NodeInfo	internal_includes/durability_graph.hpp	/^    struct NodeInfo {$/;"	s	class:Atlas::DGraph
+NodeInfoMap	internal_includes/durability_graph.hpp	/^    typedef std::map<LogEntry*, NodeInfo> NodeInfoMap;$/;"	t	class:Atlas::DGraph
+NodeInfoMap_	internal_includes/durability_graph.hpp	/^    NodeInfoMap NodeInfoMap_;$/;"	m	class:Atlas::DGraph
+NodeType	internal_includes/durability_graph.hpp	/^    enum NodeType {kAvail, kAbsent};$/;"	g	class:Atlas::DGraph
+NodeType_	internal_includes/durability_graph.hpp	/^        NodeType NodeType_;$/;"	m	struct:Atlas::DGraph::NodeInfo
+OpType	internal_includes/pregion_mgr.hpp	/^    enum OpType { kCreate_, kFind_, kClose_, kDelete_ };$/;"	g	class:Atlas::PRegionMgr
+PArena	internal_includes/pmalloc.hpp	/^    explicit PArena() : CurrAllocAddr_{nullptr}, StartAddr_{nullptr},$/;"	f	class:Atlas::PArena
+PArena	internal_includes/pmalloc.hpp	/^class PArena {$/;"	c	namespace:Atlas
+PMALLOC_HPP	internal_includes/pmalloc.hpp	18;"	d
+PMALLOC_UTIL_HPP	internal_includes/pmalloc_util.hpp	18;"	d
+PMallocUtil	internal_includes/pmalloc_util.hpp	/^class PMallocUtil {$/;"	c	namespace:Atlas
+PREGION_CONFIGS_HPP	internal_includes/pregion_configs.hpp	18;"	d
+PREGION_HPP	internal_includes/pregion.hpp	18;"	d
+PREGION_MGR_HPP	internal_includes/pregion_mgr.hpp	18;"	d
+PREGION_MGR_UTIL_HPP	internal_includes/pregion_mgr_util.hpp	18;"	d
+PRegion	internal_includes/pregion.hpp	/^    explicit PRegion(const char *nm, region_id_t rid, void *ba) $/;"	f	class:Atlas::PRegion
+PRegion	internal_includes/pregion.hpp	/^class PRegion {$/;"	c	namespace:Atlas
+PRegionExtentMap	internal_includes/pregion_mgr_util.hpp	/^    PRegionExtentMap(const PRegionExtentMap& from) {$/;"	f	class:Atlas::PRegionExtentMap
+PRegionExtentMap	internal_includes/pregion_mgr_util.hpp	/^class PRegionExtentMap {$/;"	c	namespace:Atlas
+PRegionMgr	internal_includes/pregion_mgr.hpp	/^    PRegionMgr() : PRegionTable_{nullptr}, PRegionTableFD_{-1},$/;"	f	class:Atlas::PRegionMgr
+PRegionMgr	internal_includes/pregion_mgr.hpp	/^class PRegionMgr {$/;"	c	namespace:Atlas
+PRegionTableFD_	internal_includes/pregion_mgr.hpp	/^    int   PRegionTableFD_; \/\/ file holding the metadata$/;"	m	class:Atlas::PRegionMgr
+PRegionTableLock_	internal_includes/pregion_mgr.hpp	/^    pthread_mutex_t PRegionTableLock_; \/\/ mediator across threads$/;"	m	class:Atlas::PRegionMgr
+PRegionTable_	internal_includes/pregion_mgr.hpp	/^    void *PRegionTable_; \/\/ pointer to regions metadata$/;"	m	class:Atlas::PRegionMgr
+PendingList	internal_includes/consistency_mgr.hpp	/^    typedef std::vector<PendingPair> PendingList;$/;"	t	class:Atlas::CSMgr
+PendingList_	internal_includes/consistency_mgr.hpp	/^    PendingList PendingList_;$/;"	m	class:Atlas::CSMgr
+PendingPair	internal_includes/consistency_mgr.hpp	/^    typedef std::pair<LogEntry*, DGraph::VDesc> PendingPair;$/;"	t	class:Atlas::CSMgr
+PrintAcqLog	consistency/durability_graph_builder.cpp	/^void DGraph::PrintAcqLog(LogEntry *le)$/;"	f	class:Atlas::DGraph
+PrintAllocLog	consistency/durability_graph_builder.cpp	/^void DGraph::PrintAllocLog(LogEntry *le)$/;"	f	class:Atlas::DGraph
+PrintBeginDurableLog	consistency/durability_graph_builder.cpp	/^void DGraph::PrintBeginDurableLog(LogEntry *le)$/;"	f	class:Atlas::DGraph
+PrintDummyLog	consistency/durability_graph_builder.cpp	/^void DGraph::PrintDummyLog(LogEntry *le)$/;"	f	class:Atlas::DGraph
+PrintEndDurableLog	consistency/durability_graph_builder.cpp	/^void DGraph::PrintEndDurableLog(LogEntry *le)$/;"	f	class:Atlas::DGraph
+PrintFreeLog	consistency/durability_graph_builder.cpp	/^void DGraph::PrintFreeLog(LogEntry *le)$/;"	f	class:Atlas::DGraph
+PrintLogs	consistency/durability_graph_builder.cpp	/^void DGraph::PrintLogs(FASection *fase)$/;"	f	class:Atlas::DGraph
+PrintMemOpLog	consistency/durability_graph_builder.cpp	/^void DGraph::PrintMemOpLog(LogEntry *le)$/;"	f	class:Atlas::DGraph
+PrintRWUnlockLog	consistency/durability_graph_builder.cpp	/^void DGraph::PrintRWUnlockLog(LogEntry *le)$/;"	f	class:Atlas::DGraph
+PrintRdLockLog	consistency/durability_graph_builder.cpp	/^void DGraph::PrintRdLockLog(LogEntry *le)$/;"	f	class:Atlas::DGraph
+PrintRelLog	consistency/durability_graph_builder.cpp	/^void DGraph::PrintRelLog(LogEntry *le)$/;"	f	class:Atlas::DGraph
+PrintStrLog	consistency/durability_graph_builder.cpp	/^void DGraph::PrintStrLog(LogEntry *le)$/;"	f	class:Atlas::DGraph
+PrintStrOpLog	consistency/durability_graph_builder.cpp	/^void DGraph::PrintStrOpLog(LogEntry *le)$/;"	f	class:Atlas::DGraph
+PrintWrLockLog	consistency/durability_graph_builder.cpp	/^void DGraph::PrintWrLockLog(LogEntry *le)$/;"	f	class:Atlas::DGraph
+R2AIter	recover/recover.hpp	/^typedef MapR2A::const_iterator R2AIter;$/;"	t
+R_Finalize	recover/recover.cpp	/^void R_Finalize(const char *s)$/;"	f
+R_Initialize	recover/recover.cpp	/^void R_Initialize(const char *s)$/;"	f
+Recover	recover/recover.cpp	/^void Recover()$/;"	f
+Recover	recover/recover.cpp	/^void Recover(int tid)$/;"	f
+RecoveryTimeLsp_	internal_includes/log_mgr.hpp	/^    std::atomic<LogStructure*> RecoveryTimeLsp_;$/;"	m	class:Atlas::LogMgr
+RecoveryTrace	recover/recover.cpp	/^template<class T> void RecoveryTrace(void *p)$/;"	f
+RegionId_	internal_includes/log_mgr.hpp	/^    region_id_t RegionId_; \/\/ Persistent region holding the logs$/;"	m	class:Atlas::LogMgr
+ReleaseInfoTab_	internal_includes/log_mgr.hpp	/^    std::atomic<LastReleaseInfo*> ReleaseInfoTab_[kHashTableSize];$/;"	m	class:Atlas::LogMgr
+Replay	recover/recover.cpp	/^void Replay(LogEntry *le)$/;"	f
+STATS_HPP	internal_includes/stats.hpp	18;"	d
+SetOfInts	internal_includes/util.hpp	/^typedef std::set<uint64_t> SetOfInts;$/;"	t
+SetOfPairs	internal_includes/util.hpp	/^typedef std::set<AddrSizePairType, CmpAddrSizePair> SetOfPairs;$/;"	t
+SimpleHashTable	internal_includes/util.hpp	/^    SimpleHashTable(uint32_t size=0)$/;"	f	class:SimpleHashTable
+SimpleHashTable	internal_includes/util.hpp	/^class SimpleHashTable$/;"	c
+Size	internal_includes/circular_buffer.hpp	/^    uint32_t Size;$/;"	m	struct:Atlas::CbLog
+Size	internal_includes/log_structure.hpp	/^    size_t Size:60; \/* mloc size or a generation # for sync ops *\/$/;"	m	struct:Atlas::LogEntry
+Size_	internal_includes/util.hpp	/^    static uint32_t Size_;$/;"	m	class:SimpleHashTable
+Size_	util/util.cpp	/^template<> uint32_t SimpleHashTable<SetOfInts>::Size_ = 1024;$/;"	m	class:SimpleHashTable	file:
+Start	internal_includes/circular_buffer.hpp	/^    std::atomic<uint32_t> Start;$/;"	m	struct:Atlas::CbLog
+StartAddr	internal_includes/circular_buffer.hpp	/^    char *StartAddr;$/;"	m	struct:Atlas::CbListNode
+StartAddr_	internal_includes/pmalloc.hpp	/^    void *StartAddr_;     $/;"	m	class:Atlas::PArena
+Stats	internal_includes/stats.hpp	/^class Stats {$/;"	c	namespace:Atlas
+Stats_	internal_includes/log_mgr.hpp	/^    Stats *Stats_;$/;"	m	class:Atlas::LogMgr
+TL_CbLog_	internal_includes/log_mgr.hpp	/^    thread_local static CbLog<LogEntry> *TL_CbLog_; $/;"	m	class:Atlas::LogMgr
+TL_CriticalLoggedStoreCount	internal_includes/stats.hpp	/^    thread_local static uint64_t TL_CriticalLoggedStoreCount;$/;"	m	class:Atlas::Stats
+TL_CriticalSectionCount	internal_includes/stats.hpp	/^    thread_local static uint64_t TL_CriticalSectionCount;$/;"	m	class:Atlas::Stats
+TL_CurrArena_	internal_includes/pmalloc_util.hpp	/^    static thread_local uint32_t TL_CurrArena_[kMaxNumPRegions_];$/;"	m	class:Atlas::PMallocUtil
+TL_CurrArena_	pmalloc/pmalloc.cpp	/^thread_local uint32_t PMallocUtil::TL_CurrArena_[kMaxNumPRegions_] = {};$/;"	m	class:Atlas::PMallocUtil	file:
+TL_DataFlushTab_	internal_includes/log_mgr.hpp	/^    thread_local static intptr_t TL_DataFlushTab_[kFlushTableSize];$/;"	m	class:Atlas::LogMgr
+TL_DataFlushTab_	logger/log_mgr.cpp	/^thread_local intptr_t LogMgr::TL_DataFlushTab_[kFlushTableSize] = {};$/;"	m	class:Atlas::LogMgr	file:
+TL_FaseFlushPtr_	internal_includes/log_mgr.hpp	/^    thread_local static SetOfInts *TL_FaseFlushPtr_;$/;"	m	class:Atlas::LogMgr
+TL_GenNum_	internal_includes/log_mgr.hpp	/^    thread_local static uint64_t TL_GenNum_;$/;"	m	class:Atlas::LogMgr
+TL_IsFirstNonCSStmt_	internal_includes/log_mgr.hpp	/^    thread_local static bool TL_IsFirstNonCSStmt_;$/;"	m	class:Atlas::LogMgr
+TL_LastLogEntry_	internal_includes/log_mgr.hpp	/^    thread_local static LogEntry *TL_LastLogEntry_;$/;"	m	class:Atlas::LogMgr
+TL_LogCount_	internal_includes/log_mgr.hpp	/^    thread_local static uint32_t TL_LogCount_; $/;"	m	class:Atlas::LogMgr
+TL_LogCounter_	internal_includes/log_mgr.hpp	/^    thread_local static uint64_t TL_LogCounter_;$/;"	m	class:Atlas::LogMgr
+TL_LogElisionFailCount	internal_includes/stats.hpp	/^    thread_local static uint64_t TL_LogElisionFailCount;$/;"	m	class:Atlas::Stats
+TL_LogMemUse	internal_includes/stats.hpp	/^    thread_local static uint64_t TL_LogMemUse;$/;"	m	class:Atlas::Stats
+TL_LoggedStoreCount	internal_includes/stats.hpp	/^    thread_local static uint64_t TL_LoggedStoreCount;$/;"	m	class:Atlas::Stats
+TL_NestedCriticalSectionCount	internal_includes/stats.hpp	/^    thread_local static uint64_t TL_NestedCriticalSectionCount;$/;"	m	class:Atlas::Stats
+TL_NumHeldLocks_	internal_includes/log_mgr.hpp	/^    thread_local static intptr_t TL_NumHeldLocks_;$/;"	m	class:Atlas::LogMgr
+TL_NumLogFlushes	internal_includes/stats.hpp	/^    thread_local static uint64_t TL_NumLogFlushes;$/;"	m	class:Atlas::Stats
+TL_ShouldLogNonCSStmt_	internal_includes/log_mgr.hpp	/^    thread_local static bool TL_ShouldLogNonCSStmt_;$/;"	m	class:Atlas::LogMgr
+TL_UndoLocks_	internal_includes/log_mgr.hpp	/^    thread_local static MapOfLockInfo *TL_UndoLocks_;$/;"	m	class:Atlas::LogMgr
+TL_UniqueLoc_	internal_includes/log_mgr.hpp	/^    thread_local static SetOfPairs *TL_UniqueLoc_;$/;"	m	class:Atlas::LogMgr
+TL_UnloggedCriticalStoreCount	internal_includes/stats.hpp	/^    thread_local static uint64_t TL_UnloggedCriticalStoreCount;$/;"	m	class:Atlas::Stats
+TL_UnloggedStoreCount	internal_includes/stats.hpp	/^    thread_local static uint64_t TL_UnloggedStoreCount;$/;"	m	class:Atlas::Stats
+Tab_	internal_includes/util.hpp	/^    std::atomic<ElemInfo<ElemType>*> *Tab_;$/;"	m	class:SimpleHashTable
+Tid	internal_includes/circular_buffer.hpp	/^    pthread_t Tid;$/;"	m	struct:Atlas::CbListNode
+Tid2Log	recover/recover.hpp	/^typedef map<int \/* tid *\/, LogEntry* \/* last log replayed *\/> Tid2Log;$/;"	t
+TotalGraphBuildTime_	internal_includes/helper.hpp	/^    uint64_t TotalGraphBuildTime_;$/;"	m	class:Atlas::Helper
+TotalGraphResolveTime_	internal_includes/helper.hpp	/^    uint64_t TotalGraphResolveTime_;$/;"	m	class:Atlas::Helper
+TotalPruneTime_	internal_includes/helper.hpp	/^    uint64_t TotalPruneTime_;$/;"	m	class:Atlas::Helper
+TraceStream_	internal_includes/helper.hpp	/^    std::ofstream TraceStream_;$/;"	m	class:Atlas::Helper
+Type	internal_includes/log_structure.hpp	/^    LogType Type:4;$/;"	m	struct:Atlas::LogEntry
+UInt64Pair	internal_includes/util.hpp	/^typedef std::pair<uint64_t,uint64_t> UInt64Pair;$/;"	t
+Unlock	internal_includes/pmalloc.hpp	/^    void Unlock() { pthread_mutex_unlock(&Lock_); }$/;"	f	class:Atlas::PArena
+VDesc	internal_includes/durability_graph.hpp	/^    typedef boost::graph_traits<DirectedGraph>::vertex_descriptor VDesc;$/;"	t	class:Atlas::DGraph
+VIter	internal_includes/durability_graph.hpp	/^    typedef boost::graph_traits<DirectedGraph>::vertex_iterator VIter;$/;"	t	class:Atlas::DGraph
+VProp	internal_includes/durability_graph.hpp	/^        VProp(FASection *fase, bool is_stable) $/;"	f	struct:Atlas::DGraph::VProp
+VProp	internal_includes/durability_graph.hpp	/^    struct VProp {$/;"	s	class:Atlas::DGraph
+ValueOrPtr	internal_includes/log_structure.hpp	/^    uintptr_t ValueOrPtr; \/* either value or ptr (for sync ops) *\/$/;"	m	struct:Atlas::LogEntry
+_LOG_ALLOC_H	internal_includes/circular_buffer.hpp	18;"	d
+_RECOVER_H	recover/recover.hpp	18;"	d
+_UTIL_H	internal_includes/util.hpp	18;"	d
+acquireExclusiveFLock	internal_includes/pregion_mgr.hpp	/^    void acquireExclusiveFLock()$/;"	f	class:Atlas::PRegionMgr
+acquireLock	internal_includes/stats.hpp	/^    void acquireLock()$/;"	f	class:Atlas::Stats
+acquireLogReadyLock	internal_includes/log_mgr.hpp	/^    void acquireLogReadyLock()$/;"	f	class:Atlas::LogMgr
+acquireStatsLock	internal_includes/log_mgr.hpp	/^    void acquireStatsLock()$/;"	f	class:Atlas::LogMgr
+acquireTableLock	internal_includes/pregion_mgr.hpp	/^    void acquireTableLock()$/;"	f	class:Atlas::PRegionMgr
+addEntryToDeletedMap	internal_includes/helper.hpp	/^    void addEntryToDeletedMap(LogEntry *le, uint64_t gen_num)$/;"	f	class:Atlas::Helper
+addFaseToVec	internal_includes/consistency_mgr.hpp	/^    void addFaseToVec(FASection *fase)$/;"	f	class:Atlas::CSMgr
+addFirstFase	internal_includes/consistency_mgr.hpp	/^    void addFirstFase(LogStructure *ls, FASection *fase) {$/;"	f	class:Atlas::CSMgr
+addLockReleaseCount	logger/log_elision.cpp	/^void LogMgr::addLockReleaseCount(void *lock_address, uint64_t count)$/;"	f	class:Atlas::LogMgr
+addLogStructure	consistency/consistency.cpp	/^void CSMgr::addLogStructure(LogEntry *le, LogStructure **header,$/;"	f	class:Atlas::CSMgr
+addLogToLastReleaseInfo	logger/happens_before.cpp	/^void LogMgr::addLogToLastReleaseInfo(LogEntry *le,$/;"	f	class:Atlas::LogMgr
+addSyncEdges	consistency/durability_graph_builder.cpp	/^void CSMgr::addSyncEdges($/;"	f	class:Atlas::CSMgr
+addThreadNode	consistency/durability_graph_builder.cpp	/^static inline void addThreadNode($/;"	f	namespace:Atlas
+addToNodeInfoMap	consistency/durability_graph_builder.cpp	/^void DGraph::addToNodeInfoMap(LogEntry *le, VDesc nid, NodeType node_type)$/;"	f	class:Atlas::DGraph
+addToPendingList	internal_includes/consistency_mgr.hpp	/^    void addToPendingList(LogEntry *le, DGraph::VDesc nid) {$/;"	f	class:Atlas::CSMgr
+allocFromFreeList	pmalloc/pmalloc.cpp	/^void *PArena::allocFromFreeList($/;"	f	class:Atlas::PArena
+allocFromUpdatedFreeList	pmalloc/pmalloc.cpp	/^void *PArena::allocFromUpdatedFreeList($/;"	f	class:Atlas::PArena
+allocLogEntry	logger/circular_buffer.cpp	/^LogEntry *LogMgr::allocLogEntry()$/;"	f	class:Atlas::LogMgr
+allocMem	internal_includes/pregion_mgr.hpp	/^inline void *PRegionMgr::allocMem($/;"	f	class:Atlas::PRegionMgr
+allocMem	pmalloc/pmalloc.cpp	/^void *PArena::allocMem($/;"	f	class:Atlas::PArena
+allocMem	pmalloc/pregion.cpp	/^void *PRegion::allocMem($/;"	f	class:Atlas::PRegion
+allocMemCacheLineAligned	internal_includes/pregion_mgr.hpp	/^inline void *PRegionMgr::allocMemCacheLineAligned($/;"	f	class:Atlas::PRegionMgr
+allocMemFromArenas	pmalloc/pregion.cpp	/^void *PRegion::allocMemFromArenas($/;"	f	class:Atlas::PRegion
+allocMemWithoutLogging	internal_includes/pregion_mgr.hpp	/^inline void *PRegionMgr::allocMemWithoutLogging($/;"	f	class:Atlas::PRegionMgr
+allocRawMem	pmalloc/pmalloc.cpp	/^void *PArena::allocRawMem(size_t sz)$/;"	f	class:Atlas::PArena
+allocRoot	internal_includes/pregion.hpp	/^    void *allocRoot()$/;"	f	class:Atlas::PRegion
+areLogicallySame	consistency/log_pruner.cpp	/^bool CSMgr::areLogicallySame(LogStructure *gh, LogStructure *cand_gh)$/;"	f	class:Atlas::CSMgr
+areUserThreadsDone	internal_includes/consistency_mgr.hpp	/^    bool areUserThreadsDone() const$/;"	f	class:Atlas::CSMgr
+areUserThreadsDone	internal_includes/helper.hpp	/^    bool areUserThreadsDone() const$/;"	f	class:Atlas::Helper
+areUserThreadsDone	internal_includes/log_mgr.hpp	/^    bool areUserThreadsDone() const$/;"	f	class:Atlas::LogMgr
+assertOneCacheLine	internal_includes/log_mgr.hpp	/^    void assertOneCacheLine(LogEntry *le) {$/;"	f	class:Atlas::LogMgr
+asyncDataFlush	cache_flush/table_based.cpp	/^void LogMgr::asyncDataFlush(void *p)$/;"	f	class:Atlas::LogMgr
+asyncMemOpDataFlush	cache_flush/table_based.cpp	/^void LogMgr::asyncMemOpDataFlush(void *dst, size_t sz)$/;"	f	class:Atlas::LogMgr
+atlas_rdtsc	internal_includes/internal_api.h	/^static inline uint64_t atlas_rdtsc() {$/;"	f
+bail	internal_includes/fsync.hpp	/^static void bail(char *msg, int line) {$/;"	f
+buildFASection	consistency/consistency.cpp	/^FASection *CSMgr::buildFASection(LogEntry *le)$/;"	f	class:Atlas::CSMgr
+buildInitialGraph	consistency/durability_graph_builder.cpp	/^void CSMgr::buildInitialGraph(LogStructure *lsp)$/;"	f	class:Atlas::CSMgr
+callocMem	internal_includes/pregion_mgr.hpp	/^inline void *PRegionMgr::callocMem($/;"	f	class:Atlas::PRegionMgr
+callocMem	pmalloc/pregion.cpp	/^void *PRegion::callocMem(size_t nmemb, size_t sz)$/;"	f	class:Atlas::PRegion
+canElideLogging	logger/log_elision.cpp	/^bool LogMgr::canElideLogging()$/;"	f	class:Atlas::LogMgr
+carveExtraMem	pmalloc/pmalloc.cpp	/^void *PArena::carveExtraMem($/;"	f	class:Atlas::PArena
+clear_vertex	internal_includes/durability_graph.hpp	/^    void clear_vertex(VDesc vertex)$/;"	f	class:Atlas::DGraph
+closePRegion	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::closePRegion(region_id_t rid, bool is_deleting)$/;"	f	class:Atlas::PRegionMgr
+cmpXchngWeakLogPointer	internal_includes/log_mgr.hpp	/^    bool cmpXchngWeakLogPointer(LogStructure *expected,$/;"	f	class:Atlas::LogMgr
+cmpXchngWeakRecoveryLogPointer	internal_includes/log_mgr.hpp	/^    bool cmpXchngWeakRecoveryLogPointer(LogStructure *expected,$/;"	f	class:Atlas::LogMgr
+collectCacheLines	cache_flush/delayed.cpp	/^void LogMgr::collectCacheLines(SetOfInts *cl_set, void *addr, size_t sz)$/;"	f	class:Atlas::LogMgr
+collectLogs	consistency/consistency.cpp	/^void CSMgr::collectLogs(Log2Bool *logs, FASection *fase)$/;"	f	class:Atlas::CSMgr
+collectRelLogEntries	consistency/helper_driver.cpp	/^void Helper::collectRelLogEntries(LogStructure *lsp)$/;"	f	class:Atlas::Helper
+computeNewPRegionBaseAddr	internal_includes/pregion_mgr.hpp	/^inline void *PRegionMgr::computeNewPRegionBaseAddr() const$/;"	f	class:Atlas::PRegionMgr
+computePRegionBaseAddr	internal_includes/pregion_mgr.hpp	/^inline void *PRegionMgr::computePRegionBaseAddr(void *addr) const$/;"	f	class:Atlas::PRegionMgr
+copyDeletedLogEntries	consistency/log_pruner.cpp	/^void CSMgr::copyDeletedLogEntries(LogEntryVec *deleted_les,$/;"	f	class:Atlas::CSMgr
+createAllocationLogEntry	logger/log_entry_create.cpp	/^LogEntry *LogMgr::createAllocationLogEntry(void *addr, LogType le_type)$/;"	f	class:Atlas::LogMgr
+createDummyLogEntry	logger/log_entry_create.cpp	/^LogEntry *LogMgr::createDummyLogEntry()$/;"	f	class:Atlas::LogMgr
+createEdge	internal_includes/durability_graph.hpp	/^inline DGraph::EDesc DGraph::createEdge(VDesc src, VDesc tgt)$/;"	f	class:Atlas::DGraph
+createInstance	internal_includes/consistency_mgr.hpp	/^    static CSMgr& createInstance() {$/;"	f	class:Atlas::CSMgr
+createInstance	internal_includes/helper.hpp	/^    static Helper& createInstance() {$/;"	f	class:Atlas::Helper
+createInstance	internal_includes/log_mgr.hpp	/^    static LogMgr& createInstance() {$/;"	f	class:Atlas::LogMgr
+createInstance	internal_includes/pregion_mgr.hpp	/^    static PRegionMgr& createInstance() {$/;"	f	class:Atlas::PRegionMgr
+createInstance	internal_includes/stats.hpp	/^    static Stats& createInstance() {$/;"	f	class:Atlas::Stats
+createLogStructure	logger/log_entry_create.cpp	/^LogStructure *LogMgr::createLogStructure(LogEntry *le)$/;"	f	class:Atlas::LogMgr
+createMemStrLogEntry	logger/log_entry_create.cpp	/^LogEntry *LogMgr::createMemStrLogEntry(void *addr, size_t sz, LogType le_type)$/;"	f	class:Atlas::LogMgr
+createNewImmutableInfo	logger/happens_before.cpp	/^ImmutableInfo *LogMgr::createNewImmutableInfo($/;"	f	class:Atlas::LogMgr
+createNewLastReleaseInfo	logger/happens_before.cpp	/^LastReleaseInfo *LogMgr::createNewLastReleaseInfo($/;"	f	class:Atlas::LogMgr
+createNode	internal_includes/durability_graph.hpp	/^inline DGraph::VDesc DGraph::createNode(FASection *fase)$/;"	f	class:Atlas::DGraph
+createPRegion	pregion_mgr/pregion_mgr.cpp	/^region_id_t PRegionMgr::createPRegion(const char *name, int flags)$/;"	f	class:Atlas::PRegionMgr
+createRecoveryInstance	internal_includes/log_mgr.hpp	/^    static LogMgr& createRecoveryInstance() {$/;"	f	class:Atlas::LogMgr
+createSectionLogEntry	logger/log_entry_create.cpp	/^LogEntry *LogMgr::createSectionLogEntry(void *lock_address, LogType le_type)$/;"	f	class:Atlas::LogMgr
+createStrLogEntry	logger/log_entry_create.cpp	/^LogEntry *LogMgr::createStrLogEntry(void *addr, size_t size_in_bits)$/;"	f	class:Atlas::LogMgr
+createVersions	consistency/consistency.cpp	/^void CSMgr::createVersions(Helper::LogVersions *log_v)$/;"	f	class:Atlas::CSMgr
+decrementActualAllocedStats	internal_includes/pmalloc.hpp	/^inline void PArena::decrementActualAllocedStats(size_t sz)$/;"	f	class:Atlas::PArena
+deleteEntry	consistency/log_pruner.cpp	/^void LogMgr::deleteEntry(const std::atomic<CbListNode<T>*> & cb_list, T *addr)$/;"	f	class:Atlas::LogMgr
+deleteEntry	internal_includes/log_mgr.hpp	/^    void deleteEntry(LogEntry *addr)$/;"	f	class:Atlas::LogMgr
+deleteExtent	internal_includes/pregion_mgr_util.hpp	/^    void deleteExtent(intptr_t first, intptr_t last, uint32_t id) {$/;"	f	class:Atlas::PRegionExtentMap
+deleteExtent	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::deleteExtent($/;"	f	class:Atlas::PRegionMgr
+deleteForcefullyAllPRegions	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::deleteForcefullyAllPRegions()$/;"	f	class:Atlas::PRegionMgr
+deleteForcefullyPRegion	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::deleteForcefullyPRegion(PRegion *preg)$/;"	f	class:Atlas::PRegionMgr
+deleteForcefullyPRegion	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::deleteForcefullyPRegion(const char *name)$/;"	f	class:Atlas::PRegionMgr
+deleteFromFreeList	pmalloc/pmalloc.cpp	/^void PArena::deleteFromFreeList(uint32_t bin_no, void *mem)$/;"	f	class:Atlas::PArena
+deleteInstance	internal_includes/consistency_mgr.hpp	/^    static void deleteInstance() {$/;"	f	class:Atlas::CSMgr
+deleteInstance	internal_includes/helper.hpp	/^    static void deleteInstance() {$/;"	f	class:Atlas::Helper
+deleteInstance	internal_includes/log_mgr.hpp	/^    static void deleteInstance() {$/;"	f	class:Atlas::LogMgr
+deleteInstance	internal_includes/pregion_mgr.hpp	/^    static void deleteInstance() {$/;"	f	class:Atlas::PRegionMgr
+deleteInstance	internal_includes/stats.hpp	/^    static void deleteInstance() {$/;"	f	class:Atlas::Stats
+deleteMem	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::deleteMem(void *ptr, bool should_log) const$/;"	f	class:Atlas::PRegionMgr
+deleteOwnerInfo	logger/happens_before.cpp	/^void LogMgr::deleteOwnerInfo(LogEntry *le)$/;"	f	class:Atlas::LogMgr
+deletePRegion	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::deletePRegion(const char *name)$/;"	f	class:Atlas::PRegionMgr
+deleteSlot	consistency/log_pruner.cpp	/^void LogMgr::deleteSlot(CbLog<T> *cb, T *addr)$/;"	f	class:Atlas::LogMgr
+destroyFASections	consistency/consistency.cpp	/^void CSMgr::destroyFASections()$/;"	f	class:Atlas::CSMgr
+destroyLS	consistency/log_pruner.cpp	/^void CSMgr::destroyLS(LogStructure *lsp)$/;"	f	class:Atlas::CSMgr
+destroyLogEntries	consistency/log_pruner.cpp	/^void CSMgr::destroyLogEntries(const LogEntryVec& le_vec)$/;"	f	class:Atlas::CSMgr
+destroyLogs	consistency/log_pruner.cpp	/^void CSMgr::destroyLogs(Helper::LogVersions *log_v)$/;"	f	class:Atlas::CSMgr
+doConsistentUpdate	consistency/consistency_mgr.cpp	/^void CSMgr::doConsistentUpdate(LogStructure *lsp,$/;"	f	class:Atlas::CSMgr
+doConsistentUpdate	consistency/helper_driver.cpp	/^void Helper::doConsistentUpdate(void *arg_lsp)$/;"	f	class:Atlas::Helper
+doesNeedLogging	logger/log_elision.cpp	/^bool LogMgr::doesNeedLogging(void *addr, size_t sz)$/;"	f	class:Atlas::LogMgr
+doesRangeCheck	internal_includes/pmalloc.hpp	/^    bool doesRangeCheck(void *start, size_t sz) const$/;"	f	class:Atlas::PArena
+doesRangeCheck	internal_includes/pregion.hpp	/^    bool doesRangeCheck(const void *ptr, size_t sz) const$/;"	f	class:Atlas::PRegion
+done_threads	recover/recover.cpp	/^MapInt2Bool done_threads;$/;"	v
+dumpDebugInfo	internal_includes/pregion.hpp	/^inline void PRegion::dumpDebugInfo() const$/;"	f	class:Atlas::PRegion
+dumpDebugInfo	internal_includes/pregion_mgr.hpp	/^inline void PRegionMgr::dumpDebugInfo() const$/;"	f	class:Atlas::PRegionMgr
+ensurePRegionMapped	pregion_mgr/pregion_mgr.cpp	/^std::pair<void*,region_id_t> PRegionMgr::ensurePRegionMapped(void *addr)$/;"	f	class:Atlas::PRegionMgr
+fail_program	internal_includes/fail.hpp	/^inline void fail_program () {$/;"	f
+finalize	logger/log_mgr.cpp	/^void LogMgr::finalize()$/;"	f	class:Atlas::LogMgr
+findExtent	internal_includes/pregion_mgr_util.hpp	/^    uint32_t findExtent(intptr_t first, intptr_t last) const {$/;"	f	class:Atlas::PRegionExtentMap
+findLastReleaseOfLock	logger/happens_before.cpp	/^LastReleaseInfo *LogMgr::findLastReleaseOfLock(void *hash_address)$/;"	f	class:Atlas::LogMgr
+findLastReleaseOfLogEntry	logger/happens_before.cpp	/^LastReleaseInfo *LogMgr::findLastReleaseOfLogEntry(LogEntry *candidate_le) $/;"	f	class:Atlas::LogMgr
+findLockReleaseCount	logger/log_elision.cpp	/^LockReleaseCount *LogMgr::findLockReleaseCount(void *lock_address)$/;"	f	class:Atlas::LogMgr
+findOrCreatePRegion	pregion_mgr/pregion_mgr.cpp	/^region_id_t PRegionMgr::findOrCreatePRegion($/;"	f	class:Atlas::PRegionMgr
+findPRegion	pregion_mgr/pregion_mgr.cpp	/^region_id_t PRegionMgr::findPRegion(const char *name, int flags,$/;"	f	class:Atlas::PRegionMgr
+finishAcquire	logger/log_entry_publish.cpp	/^void LogMgr::finishAcquire(void *lock_address, LogEntry *le)$/;"	f	class:Atlas::LogMgr
+finishRelease	logger/log_entry_publish.cpp	/^void LogMgr::finishRelease(LogEntry *le, const MapOfLockInfo& undo_locks)$/;"	f	class:Atlas::LogMgr
+finishWrite	logger/log_entry_publish.cpp	/^void LogMgr::finishWrite(LogEntry * le, void * addr)$/;"	f	class:Atlas::LogMgr
+fixupNewEntries	consistency/log_pruner.cpp	/^void CSMgr::fixupNewEntries(LogStructure **cand, const LSVec & new_entries)$/;"	f	class:Atlas::CSMgr
+flushAtEndOfFase	cache_flush/generic.cpp	/^void LogMgr::flushAtEndOfFase()$/;"	f	class:Atlas::LogMgr
+flushCacheLines	cache_flush/delayed.cpp	/^void LogMgr::flushCacheLines(const SetOfInts & cl_set)$/;"	f	class:Atlas::LogMgr
+flushCacheLinesUnconstrained	cache_flush/delayed.cpp	/^void LogMgr::flushCacheLinesUnconstrained(const SetOfInts & cl_set)$/;"	f	class:Atlas::LogMgr
+flushDirtyCacheLines	internal_includes/pmalloc.hpp	/^    void flushDirtyCacheLines()$/;"	f	class:Atlas::PArena
+flushDirtyCacheLines	pmalloc/pregion.cpp	/^void PRegion::flushDirtyCacheLines()$/;"	f	class:Atlas::PRegion
+flushGlobalCommit	consistency/log_pruner.cpp	/^void CSMgr::flushGlobalCommit(const LogEntryVec& logs)$/;"	f	class:Atlas::CSMgr
+flushLogPointer	internal_includes/log_mgr.hpp	/^    void flushLogPointer() { NVM_FLUSH(LogStructureHeaderPtr_); }$/;"	f	class:Atlas::LogMgr
+flushLogUncond	internal_includes/log_mgr.hpp	/^inline void LogMgr::flushLogUncond(void *p)$/;"	f	class:Atlas::LogMgr
+flushRecoveryLogPointer	internal_includes/log_mgr.hpp	/^    void flushRecoveryLogPointer() { NVM_FLUSH(&RecoveryTimeLsp_); }$/;"	f	class:Atlas::LogMgr
+freeMem	internal_includes/pregion.hpp	/^inline void PRegion::freeMem(void *ptr, bool should_log)$/;"	f	class:Atlas::PRegion
+freeMem	pmalloc/pmalloc.cpp	/^void PArena::freeMem(void *ptr, bool should_log)$/;"	f	class:Atlas::PArena
+freeMem	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::freeMem(void *ptr, bool should_log) const$/;"	f	class:Atlas::PRegionMgr
+freeMemImpl	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::freeMemImpl($/;"	f	class:Atlas::PRegionMgr
+fsync_dir	internal_includes/fsync.hpp	/^static int fsync_dir(const char *name) $/;"	f
+fsync_paranoid	internal_includes/fsync.hpp	/^static int fsync_paranoid(const char *name) {$/;"	f
+getArena	internal_includes/pregion.hpp	/^    PArena *getArena(uint32_t index)$/;"	f	class:Atlas::PRegion
+getCacheLineSize	pregion_mgr/pregion_mgr.cpp	/^int PRegionMgr::getCacheLineSize() const$/;"	f	class:Atlas::PRegionMgr
+getFirstFase	internal_includes/consistency_mgr.hpp	/^    FASection *getFirstFase(LogStructure *ls) {$/;"	f	class:Atlas::CSMgr
+getInstance	internal_includes/consistency_mgr.hpp	/^    static CSMgr& getInstance() {$/;"	f	class:Atlas::CSMgr
+getInstance	internal_includes/helper.hpp	/^    static Helper& getInstance() {$/;"	f	class:Atlas::Helper
+getInstance	internal_includes/log_mgr.hpp	/^    static LogMgr& getInstance() {$/;"	f	class:Atlas::LogMgr
+getInstance	internal_includes/pregion_mgr.hpp	/^    static PRegionMgr& getInstance() {$/;"	f	class:Atlas::PRegionMgr
+getInstance	internal_includes/stats.hpp	/^    static Stats& getInstance() {$/;"	f	class:Atlas::Stats
+getLastReleaseHeader	internal_includes/log_mgr.hpp	/^inline LastReleaseInfo *LogMgr::getLastReleaseHeader(void *lock_address)$/;"	f	class:Atlas::LogMgr
+getLastReleaseRoot	internal_includes/log_mgr.hpp	/^    std::atomic<LastReleaseInfo*> *getLastReleaseRoot(void *addr) {$/;"	f	class:Atlas::LogMgr
+getLockReleaseCountHeader	internal_includes/log_mgr.hpp	/^inline LockReleaseCount *LogMgr::getLockReleaseCountHeader(void *lock_address)$/;"	f	class:Atlas::LogMgr
+getLockReleaseCountRoot	internal_includes/log_mgr.hpp	/^    std::atomic<LockReleaseCount*> *getLockReleaseCountRoot(void *addr) {$/;"	f	class:Atlas::LogMgr
+getLogPointer	internal_includes/log_mgr.hpp	/^    LogStructure *getLogPointer(std::memory_order mem_order) const$/;"	f	class:Atlas::LogMgr
+getNewCb	logger/circular_buffer.cpp	/^CbLog<T> *LogMgr::getNewCb(uint32_t size, uint32_t rid, CbLog<T> **log_p,$/;"	f	class:Atlas::LogMgr
+getNewSlot	logger/circular_buffer.cpp	/^inline T *LogMgr::getNewSlot(uint32_t rid, CbLog<T> **log_p,$/;"	f	class:Atlas::LogMgr
+getNumNewEntries	consistency/log_pruner.cpp	/^uint32_t CSMgr::getNumNewEntries(LogStructure *new_e, LogStructure *old_e)$/;"	f	class:Atlas::CSMgr
+getNumPRegions	internal_includes/pregion_mgr.hpp	/^    uint32_t getNumPRegions() const$/;"	f	class:Atlas::PRegionMgr
+getOpenPRegionId	pregion_mgr/pregion_mgr.cpp	/^region_id_t PRegionMgr::getOpenPRegionId($/;"	f	class:Atlas::PRegionMgr
+getPRegion	internal_includes/pregion_mgr.hpp	/^    PRegion *getPRegion(region_id_t rid) const {$/;"	f	class:Atlas::PRegionMgr
+getPRegionArrayPtr	internal_includes/pregion_mgr.hpp	/^inline PRegion *PRegionMgr::getPRegionArrayPtr() const$/;"	f	class:Atlas::PRegionMgr
+getPRegionRoot	internal_includes/pregion_mgr.hpp	/^inline void *PRegionMgr::getPRegionRoot(region_id_t rid) const$/;"	f	class:Atlas::PRegionMgr
+getRecoveryLogPointer	internal_includes/log_mgr.hpp	/^    LogStructure *getRecoveryLogPointer(std::memory_order mem_order) const$/;"	f	class:Atlas::LogMgr
+getRegionId	internal_includes/log_mgr.hpp	/^    region_id_t getRegionId() const { return RegionId_; }$/;"	f	class:Atlas::LogMgr
+getRoot	internal_includes/pregion.hpp	/^    void *getRoot() const$/;"	f	class:Atlas::PRegion
+getTargetNodeInfo	consistency/durability_graph_builder.cpp	/^DGraph::NodeInfo DGraph::getTargetNodeInfo(LogEntry *tgt_le)$/;"	f	class:Atlas::DGraph
+get_actual_alloc_size	internal_includes/pmalloc_util.hpp	/^    static size_t get_actual_alloc_size(size_t sz) $/;"	f	class:Atlas::PMallocUtil
+get_actual_alloced	internal_includes/pmalloc.hpp	/^    uint64_t get_actual_alloced() const { return ActualAlloced_; }$/;"	f	class:Atlas::PArena
+get_alignment	internal_includes/pmalloc_util.hpp	/^    static size_t get_alignment() $/;"	f	class:Atlas::PMallocUtil
+get_alignment_mask	internal_includes/pmalloc_util.hpp	/^    static size_t get_alignment_mask() $/;"	f	class:Atlas::PMallocUtil
+get_base_addr	internal_includes/pregion.hpp	/^    void *get_base_addr() const { return BaseAddr_; }$/;"	f	class:Atlas::PRegion
+get_bin_number	internal_includes/pmalloc_util.hpp	/^    static uint32_t get_bin_number(size_t sz) $/;"	f	class:Atlas::PMallocUtil
+get_cache_line_mask	internal_includes/pmalloc_util.hpp	/^    static uintptr_t get_cache_line_mask()$/;"	f	class:Atlas::PMallocUtil
+get_cache_line_size	internal_includes/pmalloc_util.hpp	/^    static uint32_t get_cache_line_size()$/;"	f	class:Atlas::PMallocUtil
+get_curr_alloc_addr	internal_includes/pmalloc.hpp	/^    void *get_curr_alloc_addr() const { return CurrAllocAddr_; }$/;"	f	class:Atlas::PArena
+get_directed_graph	internal_includes/durability_graph.hpp	/^    const DirectedGraph& get_directed_graph() const$/;"	f	class:Atlas::DGraph
+get_end_addr	internal_includes/pmalloc.hpp	/^    void *get_end_addr() const { return EndAddr_; }$/;"	f	class:Atlas::PArena
+get_fase	internal_includes/durability_graph.hpp	/^    FASection *get_fase(VDesc vertex) const$/;"	f	class:Atlas::DGraph
+get_file_desc	internal_includes/pregion.hpp	/^    int get_file_desc() const { return FileDesc_; }$/;"	f	class:Atlas::PRegion
+get_id	internal_includes/pregion.hpp	/^    region_id_t get_id() const { return Id_; }$/;"	f	class:Atlas::PRegion
+get_is_allocated_ptr_from_mem	internal_includes/pmalloc_util.hpp	/^    static size_t *get_is_allocated_ptr_from_mem(void *mem) $/;"	f	class:Atlas::PMallocUtil
+get_is_allocated_ptr_from_ptr	internal_includes/pmalloc_util.hpp	/^    static size_t *get_is_allocated_ptr_from_ptr(void *ptr) $/;"	f	class:Atlas::PMallocUtil
+get_iter_num	internal_includes/helper.hpp	/^    uint64_t get_iter_num() const { return IterNum_; }$/;"	f	class:Atlas::Helper
+get_metadata_size	internal_includes/pmalloc_util.hpp	/^    static size_t get_metadata_size() $/;"	f	class:Atlas::PMallocUtil
+get_name	internal_includes/pregion.hpp	/^    const char *get_name() const { return Name_; }$/;"	f	class:Atlas::PRegion
+get_next_bin_number	internal_includes/pmalloc_util.hpp	/^    static uint32_t get_next_bin_number(uint32_t bin_number) $/;"	f	class:Atlas::PMallocUtil
+get_num_graph_vertices	internal_includes/consistency_mgr.hpp	/^    get_num_graph_vertices() const { return Graph_.get_num_vertices(); }$/;"	f	class:Atlas::CSMgr
+get_num_vertices	internal_includes/durability_graph.hpp	/^    get_num_vertices() const$/;"	f	class:Atlas::DGraph
+get_requested_alloc_size_from_mem	internal_includes/pmalloc_util.hpp	/^    static size_t get_requested_alloc_size_from_mem(void *mem) $/;"	f	class:Atlas::PMallocUtil
+get_requested_alloc_size_from_ptr	internal_includes/pmalloc_util.hpp	/^    static size_t get_requested_alloc_size_from_ptr(void *ptr) $/;"	f	class:Atlas::PMallocUtil
+get_smallest_actual_alloc_size	internal_includes/pmalloc_util.hpp	/^    static size_t get_smallest_actual_alloc_size() $/;"	f	class:Atlas::PMallocUtil
+get_start_addr	internal_includes/pmalloc.hpp	/^    void *get_start_addr() const { return StartAddr_; }$/;"	f	class:Atlas::PArena
+get_tl_curr_arena	internal_includes/pmalloc_util.hpp	/^    static uint32_t get_tl_curr_arena(region_id_t rid)$/;"	f	class:Atlas::PMallocUtil
+get_tl_next_arena	internal_includes/pmalloc_util.hpp	/^    static uint32_t get_tl_next_arena(region_id_t rid)$/;"	f	class:Atlas::PMallocUtil
+handleUnresolved	consistency/consistency.cpp	/^void CSMgr::handleUnresolved(DGraph::VDesc nid, MapNodes *removed_nodes)$/;"	f	class:Atlas::CSMgr
+hasInstance	internal_includes/log_mgr.hpp	/^    static bool hasInstance() {$/;"	f	class:Atlas::LogMgr
+hasInstance	internal_includes/pregion_mgr.hpp	/^    static bool hasInstance() { return Instance_ != nullptr; }$/;"	f	class:Atlas::PRegionMgr
+hasThreadNode	consistency/durability_graph_builder.cpp	/^static inline bool hasThreadNode($/;"	f	namespace:Atlas
+helper	consistency/helper_driver.cpp	/^void *helper(void *arg_lsp)$/;"	f	namespace:Atlas
+incrementActualAllocedStats	internal_includes/pmalloc.hpp	/^inline void PArena::incrementActualAllocedStats(size_t sz)$/;"	f	class:Atlas::PArena
+incrementCriticalLoggedStoreCount	internal_includes/stats.hpp	/^    void incrementCriticalLoggedStoreCount()$/;"	f	class:Atlas::Stats
+incrementCriticalSectionCount	internal_includes/stats.hpp	/^    void incrementCriticalSectionCount()$/;"	f	class:Atlas::Stats
+incrementLogElisionFailCount	internal_includes/stats.hpp	/^    void incrementLogElisionFailCount()$/;"	f	class:Atlas::Stats
+incrementLogMemUse	internal_includes/stats.hpp	/^    void incrementLogMemUse(size_t sz)$/;"	f	class:Atlas::Stats
+incrementLoggedStoreCount	internal_includes/stats.hpp	/^    void incrementLoggedStoreCount()$/;"	f	class:Atlas::Stats
+incrementNestedCriticalSectionCount	internal_includes/stats.hpp	/^    void incrementNestedCriticalSectionCount()$/;"	f	class:Atlas::Stats
+incrementTotalGraphBuildTime	internal_includes/helper.hpp	/^    void incrementTotalGraphBuildTime(uint64_t inc)$/;"	f	class:Atlas::Helper
+incrementTotalGraphResolveTime	internal_includes/helper.hpp	/^    void incrementTotalGraphResolveTime(uint64_t inc)$/;"	f	class:Atlas::Helper
+incrementTotalPruneTime	internal_includes/helper.hpp	/^    void incrementTotalPruneTime(uint64_t inc)$/;"	f	class:Atlas::Helper
+incrementUnloggedCriticalStoreCount	internal_includes/stats.hpp	/^    void incrementUnloggedCriticalStoreCount()$/;"	f	class:Atlas::Stats
+incrementUnloggedStoreCount	internal_includes/stats.hpp	/^    void incrementUnloggedStoreCount()$/;"	f	class:Atlas::Stats
+init	logger/log_mgr.cpp	/^void LogMgr::init()$/;"	f	class:Atlas::LogMgr
+initAllocAddresses	internal_includes/pmalloc.hpp	/^inline void PArena::initAllocAddresses(void *start_addr)$/;"	f	class:Atlas::PArena
+initArenaAllocAddresses	internal_includes/pregion.hpp	/^inline void PRegion::initArenaAllocAddresses()$/;"	f	class:Atlas::PRegion
+initArenaTransients	internal_includes/pregion.hpp	/^    void  initArenaTransients()$/;"	f	class:Atlas::PRegion
+initExistingPRegionImpl	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::initExistingPRegionImpl($/;"	f	class:Atlas::PRegionMgr
+initNewPRegionImpl	pregion_mgr/pregion_mgr.cpp	/^region_id_t PRegionMgr::initNewPRegionImpl(const char *name, int flags)$/;"	f	class:Atlas::PRegionMgr
+initPRegionRoot	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::initPRegionRoot(PRegion *preg)$/;"	f	class:Atlas::PRegionMgr
+initPRegionTable	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::initPRegionTable()$/;"	f	class:Atlas::PRegionMgr
+initTransients	internal_includes/pmalloc.hpp	/^inline void PArena::initTransients()$/;"	f	class:Atlas::PArena
+insertExtent	internal_includes/pregion_mgr_util.hpp	/^    void insertExtent(intptr_t first, intptr_t last, uint32_t id)$/;"	f	class:Atlas::PRegionExtentMap
+insertExtent	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::insertExtent($/;"	f	class:Atlas::PRegionMgr
+insertToFreeList	pmalloc/pmalloc.cpp	/^void PArena::insertToFreeList(uint32_t bin_no, void *mem)$/;"	f	class:Atlas::PArena
+instantiateNewPRegion	internal_includes/pregion_mgr.hpp	/^    PRegion *instantiateNewPRegion(region_id_t rid) const {$/;"	f	class:Atlas::PRegionMgr
+isAcquire	internal_includes/log_structure.hpp	/^    bool isAcquire() const { return Type == LE_acquire; }$/;"	f	struct:Atlas::LogEntry
+isAcquire	internal_includes/log_structure.hpp	/^static inline bool isAcquire(LogType le_type)$/;"	f	namespace:Atlas
+isAddrSizePairAlreadySeen	logger/log_elision.cpp	/^bool LogMgr::isAddrSizePairAlreadySeen(void *addr, size_t sz)$/;"	f	class:Atlas::LogMgr
+isAlloc	internal_includes/log_structure.hpp	/^    bool isAlloc() const { return Type == LE_alloc; }$/;"	f	struct:Atlas::LogEntry
+isAlloc	internal_includes/log_structure.hpp	/^static inline bool isAlloc(LogType le_type)$/;"	f	namespace:Atlas
+isAlreadyReplayed	recover/recover.cpp	/^bool isAlreadyReplayed(LogEntry *le)$/;"	f
+isAvailable	internal_includes/circular_buffer.hpp	/^    std::atomic<uint32_t> isAvailable;$/;"	m	struct:Atlas::CbListNode
+isBeginDurable	internal_includes/log_structure.hpp	/^    bool isBeginDurable() const { return Type == LE_begin_durable; }$/;"	f	struct:Atlas::LogEntry
+isBeginDurable	internal_includes/log_structure.hpp	/^static inline bool isBeginDurable(LogType le_type)$/;"	f	namespace:Atlas
+isCacheLineAligned	pregion_mgr/pregion_mgr_api.cpp	/^int isCacheLineAligned(void *p)$/;"	f
+isDeletedByHelperThread	consistency/helper_driver.cpp	/^bool Helper::isDeletedByHelperThread(LogEntry *le, uint64_t gen_num)$/;"	f	class:Atlas::Helper
+isDummy	internal_includes/log_structure.hpp	/^    bool isDummy() const { return Type == LE_dummy; }$/;"	f	struct:Atlas::LogEntry
+isDummy	internal_includes/log_structure.hpp	/^static inline bool isDummy(LogType le_type)$/;"	f	namespace:Atlas
+isEmpty	internal_includes/circular_buffer.hpp	/^    bool isEmpty() {$/;"	f	struct:Atlas::CbLog
+isEndDurable	internal_includes/log_structure.hpp	/^    bool isEndDurable() const { return Type == LE_end_durable; }$/;"	f	struct:Atlas::LogEntry
+isEndDurable	internal_includes/log_structure.hpp	/^static inline bool isEndDurable(LogType le_type)$/;"	f	namespace:Atlas
+isEndSection	internal_includes/log_structure.hpp	/^    bool isEndSection() const $/;"	f	struct:Atlas::LogEntry
+isEndSection	internal_includes/log_structure.hpp	/^static inline bool isEndSection(LogType le_type)$/;"	f	namespace:Atlas
+isFilled	internal_includes/circular_buffer.hpp	/^    std::atomic<uint32_t> isFilled;$/;"	m	struct:Atlas::CbLog
+isFirstFaseFound	internal_includes/consistency_mgr.hpp	/^    bool isFirstFaseFound(LogStructure *ls) const$/;"	f	class:Atlas::CSMgr
+isFoundInExistingLog	consistency/consistency.cpp	/^bool CSMgr::isFoundInExistingLog(LogEntry *le, uint64_t gen_num) const$/;"	f	class:Atlas::CSMgr
+isFree	internal_includes/log_structure.hpp	/^    bool isFree() const { return Type == LE_free; }$/;"	f	struct:Atlas::LogEntry
+isFree	internal_includes/log_structure.hpp	/^static inline bool isFree(LogType le_type)$/;"	f	namespace:Atlas
+isFull	internal_includes/circular_buffer.hpp	/^    bool isFull() {$/;"	f	struct:Atlas::CbLog
+isInOpenPRegion	internal_includes/pregion_mgr.hpp	/^    bool isInOpenPRegion(const void *addr, size_t sz) const$/;"	f	class:Atlas::PRegionMgr
+isInRecovery	internal_includes/consistency_mgr.hpp	/^    bool isInRecovery() const { return IsInRecovery_; }$/;"	f	class:Atlas::CSMgr
+isMemcpy	internal_includes/log_structure.hpp	/^    bool isMemcpy() const { return Type == LE_memcpy; }$/;"	f	struct:Atlas::LogEntry
+isMemcpy	internal_includes/log_structure.hpp	/^static inline bool isMemcpy(LogType le_type)$/;"	f	namespace:Atlas
+isMemmove	internal_includes/log_structure.hpp	/^    bool isMemmove() const { return Type == LE_memmove; }$/;"	f	struct:Atlas::LogEntry
+isMemmove	internal_includes/log_structure.hpp	/^static inline bool isMemmove(LogType le_type)$/;"	f	namespace:Atlas
+isMemop	internal_includes/log_structure.hpp	/^    bool isMemop() const {$/;"	f	struct:Atlas::LogEntry
+isMemop	internal_includes/log_structure.hpp	/^static inline bool isMemop(LogType le_type)$/;"	f	namespace:Atlas
+isMemset	internal_includes/log_structure.hpp	/^    bool isMemset() const { return Type == LE_memset; }$/;"	f	struct:Atlas::LogEntry
+isMemset	internal_includes/log_structure.hpp	/^static inline bool isMemset(LogType le_type)$/;"	f	namespace:Atlas
+isOnDifferentCacheLine	pregion_mgr/pregion_mgr_api.cpp	/^int isOnDifferentCacheLine(void *p1, void *p2)$/;"	f
+isRWLockRdLock	internal_includes/log_structure.hpp	/^    bool isRWLockRdLock() const { return Type == LE_rwlock_rdlock; }$/;"	f	struct:Atlas::LogEntry
+isRWLockRdLock	internal_includes/log_structure.hpp	/^static inline bool isRWLockRdLock(LogType le_type)$/;"	f	namespace:Atlas
+isRWLockUnlock	internal_includes/log_structure.hpp	/^    bool isRWLockUnlock() const { return Type == LE_rwlock_unlock; }$/;"	f	struct:Atlas::LogEntry
+isRWLockUnlock	internal_includes/log_structure.hpp	/^static inline bool isRWLockUnlock(LogType le_type)$/;"	f	namespace:Atlas
+isRWLockWrLock	internal_includes/log_structure.hpp	/^    bool isRWLockWrLock() const { return Type == LE_rwlock_wrlock; }$/;"	f	struct:Atlas::LogEntry
+isRWLockWrLock	internal_includes/log_structure.hpp	/^static inline bool isRWLockWrLock(LogType le_type)$/;"	f	namespace:Atlas
+isRelease	internal_includes/log_structure.hpp	/^    bool isRelease() const { return Type == LE_release; }$/;"	f	struct:Atlas::LogEntry
+isRelease	internal_includes/log_structure.hpp	/^static inline bool isRelease(LogType le_type)$/;"	f	namespace:Atlas
+isStable_	internal_includes/durability_graph.hpp	/^        bool isStable_;$/;"	m	struct:Atlas::DGraph::VProp
+isStartSection	internal_includes/log_structure.hpp	/^    bool isStartSection() const {$/;"	f	struct:Atlas::LogEntry
+isStartSection	internal_includes/log_structure.hpp	/^static inline bool isStartSection(LogType le_type)$/;"	f	namespace:Atlas
+isStr	internal_includes/log_structure.hpp	/^    bool isStr() const { return Type == LE_str; }$/;"	f	struct:Atlas::LogEntry
+isStr	internal_includes/log_structure.hpp	/^static inline bool isStr(LogType le_type)$/;"	f	namespace:Atlas
+isStrcat	internal_includes/log_structure.hpp	/^    bool isStrcat() const { return Type == LE_strcat; }$/;"	f	struct:Atlas::LogEntry
+isStrcat	internal_includes/log_structure.hpp	/^static inline bool isStrcat(LogType le_type)$/;"	f	namespace:Atlas
+isStrcpy	internal_includes/log_structure.hpp	/^    bool isStrcpy() const { return Type == LE_strcpy; }$/;"	f	struct:Atlas::LogEntry
+isStrcpy	internal_includes/log_structure.hpp	/^static inline bool isStrcpy(LogType le_type)$/;"	f	namespace:Atlas
+isStrop	internal_includes/log_structure.hpp	/^    bool isStrop() const { return Type == LE_strcpy || Type == LE_strcat; }$/;"	f	struct:Atlas::LogEntry
+isStrop	internal_includes/log_structure.hpp	/^static inline bool isStrop(LogType le_type)$/;"	f	namespace:Atlas
+is_cache_line_aligned	internal_includes/pmalloc_util.hpp	/^    static bool is_cache_line_aligned(void *p) $/;"	f	class:Atlas::PMallocUtil
+is_deleted	internal_includes/pregion.hpp	/^    bool is_deleted() const { return IsDeleted_; }$/;"	f	class:Atlas::PRegion
+is_mapped	internal_includes/pregion.hpp	/^    bool is_mapped() const { return IsMapped_; }$/;"	f	class:Atlas::PRegion
+is_mem_allocated	internal_includes/pmalloc_util.hpp	/^    static bool is_mem_allocated(void *mem) $/;"	f	class:Atlas::PMallocUtil
+is_on_different_cache_line	internal_includes/pmalloc_util.hpp	/^    static bool is_on_different_cache_line(void *p1, void *p2)$/;"	f	class:Atlas::PMallocUtil
+is_ptr_allocated	internal_includes/pmalloc_util.hpp	/^    static bool is_ptr_allocated(void *ptr) $/;"	f	class:Atlas::PMallocUtil
+is_stable	internal_includes/consistency_mgr.hpp	/^    bool is_stable(DGraph::VDesc vertex) const$/;"	f	class:Atlas::CSMgr
+is_stable	internal_includes/durability_graph.hpp	/^    bool is_stable(VDesc vertex) const$/;"	f	class:Atlas::DGraph
+is_valid_tl_curr_arena	internal_includes/pmalloc_util.hpp	/^    static bool is_valid_tl_curr_arena(region_id_t rid)$/;"	f	class:Atlas::PMallocUtil
+kAbsent	internal_includes/durability_graph.hpp	/^    enum NodeType {kAvail, kAbsent};$/;"	e	enum:Atlas::DGraph::NodeType
+kArenaSize_	internal_includes/pregion_configs.hpp	/^const uint32_t kArenaSize_ = kPRegionSize_ \/ kNumArenas_;$/;"	m	namespace:Atlas
+kAvail	internal_includes/durability_graph.hpp	/^    enum NodeType {kAvail, kAbsent};$/;"	e	enum:Atlas::DGraph::NodeType
+kByte_	internal_includes/pregion_configs.hpp	/^const uint64_t kByte_ = 1024;$/;"	m	namespace:Atlas
+kCircularBufferSize	internal_includes/log_configs.hpp	/^const uint32_t kCircularBufferSize = 1024 * 16 - 1;$/;"	m	namespace:Atlas
+kClose_	internal_includes/pregion_mgr.hpp	/^    enum OpType { kCreate_, kFind_, kClose_, kDelete_ };$/;"	e	enum:Atlas::PRegionMgr::OpType
+kCreate_	internal_includes/pregion_mgr.hpp	/^    enum OpType { kCreate_, kFind_, kClose_, kDelete_ };$/;"	e	enum:Atlas::PRegionMgr::OpType
+kDCacheLineSize_	internal_includes/pregion_configs.hpp	/^const uint32_t kDCacheLineSize_ = 64;$/;"	m	namespace:Atlas
+kDelete_	internal_includes/pregion_mgr.hpp	/^    enum OpType { kCreate_, kFind_, kClose_, kDelete_ };$/;"	e	enum:Atlas::PRegionMgr::OpType
+kFaseAnalysisLimit	internal_includes/consistency_configs.hpp	/^const uint32_t kFaseAnalysisLimit = 8;$/;"	m	namespace:Atlas
+kFind_	internal_includes/pregion_mgr.hpp	/^    enum OpType { kCreate_, kFind_, kClose_, kDelete_ };$/;"	e	enum:Atlas::PRegionMgr::OpType
+kFlushShift	internal_includes/cache_flush_configs.hpp	/^const uint32_t kFlushShift = 6; \/\/ log(cache line size)$/;"	m	namespace:Atlas
+kFlushTableMask	internal_includes/cache_flush_configs.hpp	/^const int32_t kFlushTableMask = kFlushTableSize - 1;$/;"	m	namespace:Atlas
+kFlushTableSize	internal_includes/cache_flush_configs.hpp	/^const int32_t kFlushTableSize = 8;$/;"	m	namespace:Atlas
+kHashTableMask	internal_includes/log_configs.hpp	/^const uint64_t kHashTableMask = kHashTableSize - 1;$/;"	m	namespace:Atlas
+kHashTableSize	internal_includes/log_configs.hpp	/^const uint64_t kHashTableSize = 1 << 10;$/;"	m	namespace:Atlas
+kInvalidPRegion_	internal_includes/pregion_configs.hpp	/^const uint32_t kInvalidPRegion_ = kMaxNumPRegions_;$/;"	m	namespace:Atlas
+kMaxBits_	internal_includes/pregion_configs.hpp	/^const uint32_t kMaxBits_ = 48;$/;"	m	namespace:Atlas
+kMaxFreeCategory_	internal_includes/pregion_configs.hpp	/^const uint32_t kMaxFreeCategory_ = 128;$/;"	m	namespace:Atlas
+kMaxNumPRegions_	internal_includes/pregion_configs.hpp	/^const uint32_t kMaxNumPRegions_ = 100;$/;"	m	namespace:Atlas
+kMaxlen_	internal_includes/pregion_configs.hpp	/^const uint32_t kMaxlen_ = kDCacheLineSize_;$/;"	m	namespace:Atlas
+kNumArenas_	internal_includes/pregion_configs.hpp	/^const uint32_t kNumArenas_ = 64;$/;"	m	namespace:Atlas
+kPRegionSize_	internal_includes/pregion_configs.hpp	/^    const uint64_t kPRegionSize_ = 1 * kByte_ * kByte_ * kByte_; \/* 1GB *\/$/;"	m	namespace:Atlas
+kPRegionSize_	internal_includes/pregion_configs.hpp	/^    const uint64_t kPRegionSize_ = 4 * kByte_ * kByte_ * kByte_; \/* 4GB *\/$/;"	m	namespace:Atlas
+kPRegionsBase_	internal_includes/pregion_configs.hpp	/^const uint64_t kPRegionsBase_ = $/;"	m	namespace:Atlas
+kShift	internal_includes/log_configs.hpp	/^const uint32_t kShift = 3;$/;"	m	namespace:Atlas
+kWorkThreshold	internal_includes/log_configs.hpp	/^const uint32_t kWorkThreshold = 100;$/;"	m	namespace:Atlas
+last_log_tracker	recover/recover.cpp	/^Tid2Log last_log_tracker;$/;"	v
+logAcquire	internal_includes/log_mgr.hpp	/^inline void LogMgr::logAcquire(void *lock_address)$/;"	f	class:Atlas::LogMgr
+logAlloc	logger/log_mgr.cpp	/^void LogMgr::logAlloc(void *addr)$/;"	f	class:Atlas::LogMgr
+logBeginDurable	internal_includes/log_mgr.hpp	/^inline void LogMgr::logBeginDurable()$/;"	f	class:Atlas::LogMgr
+logEndDurable	logger/log_mgr.cpp	/^void LogMgr::logEndDurable()$/;"	f	class:Atlas::LogMgr
+logFree	logger/log_mgr.cpp	/^void LogMgr::logFree(void *addr)$/;"	f	class:Atlas::LogMgr
+logMemcpy	internal_includes/log_mgr.hpp	/^inline void LogMgr::logMemcpy(void *dst, size_t sz)$/;"	f	class:Atlas::LogMgr
+logMemmove	internal_includes/log_mgr.hpp	/^inline void LogMgr::logMemmove(void *dst, size_t sz)$/;"	f	class:Atlas::LogMgr
+logMemset	internal_includes/log_mgr.hpp	/^inline void LogMgr::logMemset(void *addr, size_t sz)$/;"	f	class:Atlas::LogMgr
+logNonTemporal	logger/log_entry_create.cpp	/^void LogMgr::logNonTemporal($/;"	f	class:Atlas::LogMgr
+logRWUnlock	logger/log_mgr.cpp	/^void LogMgr::logRWUnlock(void *lock_address)$/;"	f	class:Atlas::LogMgr
+logRdLock	internal_includes/log_mgr.hpp	/^inline void LogMgr::logRdLock(void *lock_address)$/;"	f	class:Atlas::LogMgr
+logRelease	logger/log_mgr.cpp	/^void LogMgr::logRelease(void *lock_address)$/;"	f	class:Atlas::LogMgr
+logStore	internal_includes/log_mgr.hpp	/^inline void LogMgr::logStore(void *addr, size_t sz)$/;"	f	class:Atlas::LogMgr
+logStrcat	internal_includes/log_mgr.hpp	/^inline void LogMgr::logStrcat(void *dst, size_t sz)$/;"	f	class:Atlas::LogMgr
+logStrcpy	internal_includes/log_mgr.hpp	/^inline void LogMgr::logStrcpy(void *dst, size_t sz)$/;"	f	class:Atlas::LogMgr
+logWrLock	internal_includes/log_mgr.hpp	/^inline void LogMgr::logWrLock(void *lock_address)$/;"	f	class:Atlas::LogMgr
+main	recover/clean_mem.cpp	/^int main(int argc, char **argv)$/;"	f
+main	recover/del_log.cpp	/^int main(int argc, char **argv)$/;"	f
+main	recover/del_rgn.cpp	/^int main(int argc, char **argv)$/;"	f
+main	recover/recover.cpp	/^int main(int argc, char **argv)$/;"	f
+mapExistingPRegion	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::mapExistingPRegion(PRegion *preg, const char *name, int flags)$/;"	f	class:Atlas::PRegionMgr
+mapFile	pregion_mgr/pregion_mgr.cpp	/^int PRegionMgr::mapFile($/;"	f	class:Atlas::PRegionMgr
+mapNewPRegion	pregion_mgr/pregion_mgr.cpp	/^region_id_t PRegionMgr::mapNewPRegion($/;"	f	class:Atlas::PRegionMgr
+mapNewPRegionImpl	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::mapNewPRegionImpl($/;"	f	class:Atlas::PRegionMgr
+map_r2a	recover/recover.cpp	/^MapR2A map_r2a;$/;"	v
+mapped_prs	recover/recover.cpp	/^MapInterval mapped_prs;$/;"	v
+markEndFase	logger/log_entry_publish.cpp	/^void LogMgr::markEndFase(LogEntry *le)$/;"	f	class:Atlas::LogMgr
+mem2ptr	internal_includes/pmalloc_util.hpp	/^    static void *mem2ptr(void *mem)$/;"	f	class:Atlas::PMallocUtil
+mountpath	util/util.cpp	/^    static const char mountpath[]="\/dev\/shm\/";$/;"	v	file:
+mountpath	util/util.cpp	/^    static const char mountpath[]="\/mnt\/nvm\/pmem0\/";$/;"	v	file:
+num_flushes	util/stats.cpp	/^__thread uint64_t num_flushes = 0;$/;"	v
+nvm_acquire	logger/log_mgr_api.cpp	/^void nvm_acquire(void *lock_address)$/;"	f
+nvm_alloc	pregion_mgr/pregion_mgr_api.cpp	/^void *nvm_alloc(size_t sz, uint32_t rid)$/;"	f
+nvm_barrier	logger/log_mgr_api.cpp	/^void nvm_barrier(void *p)$/;"	f
+nvm_begin_durable	logger/log_mgr_api.cpp	/^void nvm_begin_durable()$/;"	f
+nvm_calloc	pregion_mgr/pregion_mgr_api.cpp	/^void *nvm_calloc(size_t nmemb, size_t sz, uint32_t rid)$/;"	f
+nvm_delete	pregion_mgr/pregion_mgr_api.cpp	/^void nvm_delete(void *ptr)$/;"	f
+nvm_end_durable	logger/log_mgr_api.cpp	/^void nvm_end_durable()$/;"	f
+nvm_free	pregion_mgr/pregion_mgr_api.cpp	/^void nvm_free(void *ptr)$/;"	f
+nvm_log_alloc	logger/log_mgr_api.cpp	/^void nvm_log_alloc(void *addr)$/;"	f
+nvm_log_free	logger/log_mgr_api.cpp	/^void nvm_log_free(void *addr)$/;"	f
+nvm_memcpy	logger/log_mgr_api.cpp	/^void nvm_memcpy(void *dst, size_t sz)$/;"	f
+nvm_memmove	logger/log_mgr_api.cpp	/^void nvm_memmove(void *dst, size_t sz)$/;"	f
+nvm_memset	logger/log_mgr_api.cpp	/^void nvm_memset(void *addr, size_t sz)$/;"	f
+nvm_psync	logger/log_mgr_api.cpp	/^void nvm_psync(void *start_addr, size_t sz)$/;"	f
+nvm_psync_acq	logger/log_mgr_api.cpp	/^void nvm_psync_acq(void *start_addr, size_t sz)$/;"	f
+nvm_realloc	pregion_mgr/pregion_mgr_api.cpp	/^void *nvm_realloc(void *ptr, size_t sz, uint32_t rid)$/;"	f
+nvm_release	logger/log_mgr_api.cpp	/^void nvm_release(void *lock_address)$/;"	f
+nvm_rwlock_rdlock	logger/log_mgr_api.cpp	/^void nvm_rwlock_rdlock(void *lock_address)$/;"	f
+nvm_rwlock_unlock	logger/log_mgr_api.cpp	/^void nvm_rwlock_unlock(void *lock_address)$/;"	f
+nvm_rwlock_wrlock	logger/log_mgr_api.cpp	/^void nvm_rwlock_wrlock(void *lock_address)$/;"	f
+nvm_store	logger/log_mgr_api.cpp	/^void nvm_store(void *addr, size_t sz)$/;"	f
+nvm_strcat	logger/log_mgr_api.cpp	/^void nvm_strcat(char *dst, size_t sz)$/;"	f
+nvm_strcpy	logger/log_mgr_api.cpp	/^void nvm_strcpy(char *dst, size_t sz)$/;"	f
+nvm_strlen	logger/log_mgr_api.cpp	/^size_t nvm_strlen(char *dst)$/;"	f
+operator ()	internal_includes/pregion_mgr_util.hpp	/^        bool operator()($/;"	f	class:Atlas::PRegionExtentMap::CmpIntPtr
+operator ()	internal_includes/util.hpp	/^    bool operator()(const AddrSizePairType & c1, const AddrSizePairType & c2) const $/;"	f	class:CmpAddrSizePair
+operator ()	internal_includes/util.hpp	/^    bool operator()(const UInt64Pair & c1, const UInt64Pair & c2) const$/;"	f	class:CmpUInt64
+prev_log_mapper	recover/recover.cpp	/^MapLog2Log prev_log_mapper;$/;"	v
+print	util/stats.cpp	/^void Stats::print()$/;"	f	class:Atlas::Stats
+printStats	consistency/helper_driver.cpp	/^void Helper::printStats()$/;"	f	class:Atlas::Helper
+printStats	internal_includes/log_mgr.hpp	/^    void printStats() const$/;"	f	class:Atlas::LogMgr
+printStats	internal_includes/pregion.hpp	/^inline void PRegion::printStats() $/;"	f	class:Atlas::PRegion
+psync	cache_flush/generic.cpp	/^void LogMgr::psync(void *start_addr, size_t sz)$/;"	f	class:Atlas::LogMgr
+psyncWithAcquireBarrier	cache_flush/generic.cpp	/^void LogMgr::psyncWithAcquireBarrier(void *start_addr, size_t sz)$/;"	f	class:Atlas::LogMgr
+ptr2mem	internal_includes/pmalloc_util.hpp	/^    static void *ptr2mem(void *ptr)$/;"	f	class:Atlas::PMallocUtil
+publishLogEntry	logger/log_entry_publish.cpp	/^void LogMgr::publishLogEntry(LogEntry *le)$/;"	f	class:Atlas::LogMgr
+reallocMem	internal_includes/pregion_mgr.hpp	/^inline void *PRegionMgr::reallocMem($/;"	f	class:Atlas::PRegionMgr
+reallocMem	pmalloc/pregion.cpp	/^void *PRegion::reallocMem(void *ptr, size_t sz)$/;"	f	class:Atlas::PRegion
+region_id_t	internal_includes/pregion_configs.hpp	/^typedef uint32_t region_id_t;$/;"	t	namespace:Atlas
+releaseFLock	internal_includes/pregion_mgr.hpp	/^    void releaseFLock()$/;"	f	class:Atlas::PRegionMgr
+releaseLock	internal_includes/stats.hpp	/^    void releaseLock()$/;"	f	class:Atlas::Stats
+releaseLogReadyLock	internal_includes/log_mgr.hpp	/^    void releaseLogReadyLock()$/;"	f	class:Atlas::LogMgr
+releaseStatsLock	internal_includes/log_mgr.hpp	/^    void releaseStatsLock()$/;"	f	class:Atlas::LogMgr
+releaseTableLock	internal_includes/pregion_mgr.hpp	/^    void releaseTableLock()$/;"	f	class:Atlas::PRegionMgr
+removeLockFromUndoInfo	logger/log_elision.cpp	/^uint64_t LogMgr::removeLockFromUndoInfo(void *lock_address)$/;"	f	class:Atlas::LogMgr
+removeUnresolvedNodes	consistency/consistency.cpp	/^void CSMgr::removeUnresolvedNodes()$/;"	f	class:Atlas::CSMgr
+remove_vertex	internal_includes/durability_graph.hpp	/^    void remove_vertex(VDesc vertex)$/;"	f	class:Atlas::DGraph
+removed_log_count	consistency/helper_driver.cpp	/^uint64_t removed_log_count = 0;$/;"	m	namespace:Atlas	file:
+replayed_count	recover/recover.cpp	/^uint64_t replayed_count = 0;$/;"	v
+replayed_entries	recover/recover.cpp	/^MapLog2Bool replayed_entries;$/;"	v
+resolvePendingList	consistency/consistency.cpp	/^void CSMgr::resolvePendingList()$/;"	f	class:Atlas::CSMgr
+searchPRegion	pregion_mgr/pregion_mgr.cpp	/^PRegion* PRegionMgr::searchPRegion(const char *name) const$/;"	f	class:Atlas::PRegionMgr
+setCacheParams	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::setCacheParams() $/;"	f	class:Atlas::PRegionMgr
+setHappensBeforeForAllocFree	logger/happens_before.cpp	/^void LogMgr::setHappensBeforeForAllocFree(LogEntry *le)$/;"	f	class:Atlas::LogMgr
+setNumPRegions	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::setNumPRegions(uint32_t count)$/;"	f	class:Atlas::PRegionMgr
+setPRegionRoot	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::setPRegionRoot(region_id_t rid, void *new_root) const$/;"	f	class:Atlas::PRegionMgr
+setRecoveryLogPointer	internal_includes/log_mgr.hpp	/^    void setRecoveryLogPointer(LogStructure *log_ptr,$/;"	f	class:Atlas::LogMgr
+setRegionId	internal_includes/log_mgr.hpp	/^    void setRegionId(region_id_t id) { RegionId_ = id; }$/;"	f	class:Atlas::LogMgr
+setRoot	internal_includes/pregion.hpp	/^    void setRoot(void *new_root)$/;"	f	class:Atlas::PRegion
+set_cache_line_mask	internal_includes/pmalloc_util.hpp	/^    static void set_cache_line_mask(uintptr_t mask)$/;"	f	class:Atlas::PMallocUtil
+set_cache_line_size	internal_includes/pmalloc_util.hpp	/^    static void set_cache_line_size(uint32_t sz)$/;"	f	class:Atlas::PMallocUtil
+set_default_tl_curr_arena	internal_includes/pmalloc_util.hpp	/^    static void set_default_tl_curr_arena(region_id_t rid)$/;"	f	class:Atlas::PMallocUtil
+set_existing_rel_map	internal_includes/consistency_mgr.hpp	/^    void set_existing_rel_map(Helper::MapLog2Int *m)$/;"	f	class:Atlas::CSMgr
+set_file_desc	internal_includes/pregion.hpp	/^    void set_file_desc(int fd) { FileDesc_ = fd; }$/;"	f	class:Atlas::PRegion
+set_is_deleted	internal_includes/pregion.hpp	/^    void set_is_deleted(bool id) { IsDeleted_ = id; NVM_FLUSH(&IsDeleted_); }$/;"	f	class:Atlas::PRegion
+set_is_mapped	internal_includes/pregion.hpp	/^    void set_is_mapped(bool im) { IsMapped_ = im; NVM_FLUSH(&IsMapped_); }$/;"	f	class:Atlas::PRegion
+set_is_stable	internal_includes/consistency_mgr.hpp	/^    void set_is_stable(DGraph::VDesc vertex, bool b)$/;"	f	class:Atlas::CSMgr
+set_is_stable	internal_includes/durability_graph.hpp	/^    void set_is_stable(VDesc vertex, bool b)$/;"	f	class:Atlas::DGraph
+set_tl_curr_arena	internal_includes/pmalloc_util.hpp	/^    static void set_tl_curr_arena(region_id_t rid, uint32_t val)$/;"	f	class:Atlas::PMallocUtil
+shutPRegionTable	pregion_mgr/pregion_mgr.cpp	/^void PRegionMgr::shutPRegionTable()$/;"	f	class:Atlas::PRegionMgr
+signalHelper	logger/log_mgr.cpp	/^void LogMgr::signalHelper()$/;"	f	class:Atlas::LogMgr
+signalLogReady	internal_includes/log_mgr.hpp	/^    void signalLogReady()$/;"	f	class:Atlas::LogMgr
+statsPRegion	internal_includes/pregion_mgr.hpp	/^inline void PRegionMgr::statsPRegion(region_id_t rid) const$/;"	f	class:Atlas::PRegionMgr
+syncDataFlush	cache_flush/table_based.cpp	/^void LogMgr::syncDataFlush()$/;"	f	class:Atlas::LogMgr
+trace	consistency/durability_graph_builder.cpp	/^void DGraph::trace()$/;"	f	class:Atlas::DGraph
+trace	internal_includes/helper.hpp	/^    template<class T> void trace(T s)$/;"	f	class:Atlas::Helper
+traceGraph	internal_includes/consistency_mgr.hpp	/^    void traceGraph() {$/;"	f	class:Atlas::CSMgr
+traceHelper	internal_includes/consistency_mgr.hpp	/^    template<class T> void traceHelper(T s) {$/;"	f	class:Atlas::CSMgr
+traceHelper	internal_includes/durability_graph.hpp	/^    template<class T> void traceHelper(T tt)$/;"	f	class:Atlas::DGraph
+tracePRegion	internal_includes/pregion_mgr.hpp	/^inline void PRegionMgr::tracePRegion(region_id_t rid, OpType op) const$/;"	f	class:Atlas::PRegionMgr
+trim_rightmost_path_component	internal_includes/fsync.hpp	/^static void trim_rightmost_path_component(char *p) {$/;"	f
+tryLock	internal_includes/pmalloc.hpp	/^    int tryLock() { return pthread_mutex_trylock(&Lock_); }$/;"	f	class:Atlas::PArena
+tryLogElision	logger/log_elision.cpp	/^bool LogMgr::tryLogElision(void *addr, size_t sz)$/;"	f	class:Atlas::LogMgr
+waitLogReady	internal_includes/log_mgr.hpp	/^    void waitLogReady() {$/;"	f	class:Atlas::LogMgr
+~CSMgr	internal_includes/consistency_mgr.hpp	/^    ~CSMgr()$/;"	f	class:Atlas::CSMgr
+~Helper	internal_includes/helper.hpp	/^    ~Helper() {$/;"	f	class:Atlas::Helper
+~LogMgr	internal_includes/log_mgr.hpp	/^    ~LogMgr()$/;"	f	class:Atlas::LogMgr
+~PArena	internal_includes/pmalloc.hpp	/^    ~PArena()$/;"	f	class:Atlas::PArena
+~PRegionMgr	internal_includes/pregion_mgr.hpp	/^    ~PRegionMgr() { delete ExtentMap_.load(std::memory_order_relaxed); }$/;"	f	class:Atlas::PRegionMgr
