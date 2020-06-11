@@ -43,3 +43,8 @@ If you use PMThreads, please cite this paper:
 	series = {PLDI 2020}
 }
 ```
+
+## Acknowledgments
+
+*  The research at NUDT is supported by the Tianhe Supercomputer Project 2018YFB0204301, National High-level Personnel for Defense Technology Program (2017-JCJQ-ZQ-013), NSF 61902405. 
+*  The research at the University of Manchester is supported by the EU H2020 ACTiCLOUD 732366, and EPSRC LAMBDA EP/N035127/1 projects. Mikel Luján is funded by an Arm/RAEng Research Chair Award and a Royal Society Wolfson Fellowship.
